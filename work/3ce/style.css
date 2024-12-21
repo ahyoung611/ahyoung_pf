@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+/* ********************************** */
+body {
+    line-height: 2rem;
+    background: #fff;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.just-c {
+    justify-content: center;
+}
+
+.just-sb {
+    justify-content: space-between;
+}
+
+.align-c {
+    align-items: center;
+}
+
+.container {
+    max-width: 1380px;
+    margin: auto;
+}
+
+button {
+    color: #fff;
+    font-size: 1.6vw;
+    font-weight: 500;
+    padding: 1.5vw 3.5vw;
+    border-radius: 5px;
+}
+
+.btn1 {
+    background-color: #f32853;
+}
+
+.btn2 {
+    background-color: #323037;
+}
+
+/* ********************************** */
+
+/* header */
+header {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    color: #1d1d1d;
+    z-index: 99;
+}
+
+h1 {
+    position: absolute;
+    left: 30px;
+}
+
+h1 img {
+    max-width: 80px;
+}
+
+/* nav ************************************** */
+nav {
+    font-size: 1rem;
+    position: absolute;
+    right: 30px;
+}
+
+nav ul {
+    gap: 10px;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    font-weight: 500;
+}
+
+nav a {
+    display: block;
+}
+
+/* sect1 */
+
+.sect1 {
+    background-image: url(./images/3ce\ 배너1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    background-attachment: fixed;
+    /* height: 95vh; */
+}
+
+.intro {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+h2 {
+    font-size: 4vw;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.5vw;
+}
+
+.intro p {
+    color: #F2F2F2;
+    font-size: 2vw;
+    line-height: 1.5;
+    margin-bottom: 2vw;
+}
+
+
+
+/* sect2 */
+.title {
+    font-size: 4vw;
+    line-height: 1.5;
+    color: #484848;
+    font-weight: 700;
+    padding-bottom: 1.5vw;
+}
+
+.sub-title {
+    font-size: 2vw;
+    color: #aaa;
+    line-height: 1.5;
+}
+
+.col2 p {
+    font-style: normal;
+    color: #666;
+    font-size: 1.3vw;
+    line-height: 1.5;
+}
+
+
+
+/* sect3 */
+.sect3 {
+    background-color: #f6f6f6;
+    /* padding: 8vw 0; */
+}
+
+.item {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.sect3 ul.btn{gap: 10px;}
+
+.sect3 ul.col li {
+    margin-bottom: 60px;
+}
+
+.sect3 ul.col li img {
+    width: 100%;
+}
+
+.sect3 ul.col li figcaption {
+    background-color: #fff;
+    text-align: center;
+    color: #484848;
+    font-weight: 700;
+    font-size: 1.5vw;
+    padding: 3vw 1vw;
+}
+
+
+/* sect4 */
+.sect4 {
+    padding: 7vw 3vw;
+}
+
+.sect4 .container ul {
+    margin: 50px 0;
+}
+
+.sect4 .container ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+}
+
+.sect4 .summary {
+    width: 60%;
+}
+
+.sect4 figure {
+    width: 30%;
+}
+
+.sect4 figure img {
+    width: 100%;
+    border-radius: 999px;
+    border: 5px solid rgba(144, 144, 144, 0.250);
+}
+
+.sect4 .container ul li:nth-child(odd) figure {
+    order: 2;
+}
+
+.sect4 .container ul li:nth-child(odd) .summary {
+    order: 1;
+}
+
+.even {
+    text-align: right;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 1.5;
+    color: #484848;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.list-title {
+    font-size: 15px;
+    color: #aaa;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.list-text {
+    font-style: normal;
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.sect5 {
+    background-image: url(./images/footer\ 3ce\ 배너.jpg);
+    background-size: cover;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.intro2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+
+.intro2 p {
+    color: #F2F2F2;
+    font-size: 2vw;
+    line-height: 1.5;
+    margin-bottom: 2vw;
+}
+
+/* footer */
+footer {
+    background-color: rgb(246, 246, 246);
+}
+
+footer ul li {
+    color: #484848;
+}
+
+footer ul {
+    gap: 65px;
+}
+
+.site {
+    text-align: center;
+    padding: 35px 0;
+}
+
+.red {
+    color: red;
+    text-decoration-line: underline;
+}
+
+/*모바일***/
+@media screen and (max-width: 640px) {
+
+    /* sect1 */
+    .sect1 {
+        height: 75vh;
+    }
+
+    button {
+        font-size: 3.5vw;
+        padding: 3vw 5vw;
+    }
+
+    h2 {
+        font-size: 6.5vw;
+    }
+
+    .intro p {
+        font-size: 4.5vw;
+    }
+
+    nav {
+        /* display: none; */
+        width: 300px;
+    }
+
+    /* sect2 */
+    .sect2 {
+        padding: 50px 19px;
+    }
+    .col1,
+    .col2 {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 41px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+        padding-bottom: 3vw;
+    }
+
+    .col2 p {
+        font-size: 17px;
+    }
+
+    .sect-text {
+        margin: 1.5vw 0;
+    }
+
+    /* sect3 */
+    .sect3 {
+        padding: 50px 19px;
+    }
+    .sect3 ul.col {
+        width: 100%;
+    }
+
+    .sect3 ul.col li {
+        width: 98%;
+    }
+
+    .sect3 ul.col li figcaption {
+        font-size: 4vw;
+        padding: 6vw 2vw;
+    }
+
+    .sect3 ul{flex-direction: column; row-gap: 10px;}
+    .sect3 ul button{width: 100%;}
+
+ 
+
+    /* sect4 */
+    .sect4 .container ul li {
+        width: 100%;
+    }
+
+    /* sect5 */
+    .sect5{height: 30vh;}
+    .intro2 p {
+        font-size: 4.5vw;
+    }
+
+    /* footer */
+    footer {padding: 45px 0;}
+    footer ul li {
+            font-size: 22px;}
+
+
+}
+
+/*테블릿***/
+@media screen and (min-width: 641px) {
+
+    /* sect1 */
+    .sect1 {
+        height: 85vh;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 15px 25px;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    .intro p {
+        font-size: 26px;
+    }
+
+    nav {
+        width: 400px;
+    }
+
+    /* sect2 */
+    .sect2 {
+        padding: 8vw 3vw;
+    }
+
+    .col1,
+    .col2 {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 6vw;
+    }
+
+    .sub-title {
+        font-size: 3.6vw;
+        padding-bottom: 3vw;
+    }
+
+    .col2 p {
+        font-size: 2.5vw;
+    }
+
+    .sect-text {
+        margin: 1.5vw 0;
+    }
+
+    /* sect3 */
+    .sect3 {
+        padding: 8vw 3vw;
+    }
+
+    .sect3 ul.col li figcaption {
+        font-size: 20px;
+        padding: 30px 10px;
+    }
+
+    .sect3 ul.col li {
+        width: 48%;
+        margin-bottom: 60px;
+    }
+
+
+    /* sect4 */
+    .sect4 .container ul li {
+        width: 100%;
+
+    }
+
+    /* sect5 */
+    .sect5{height: 40vh;}
+    .intro2 p {font-size: 26px;}
+
+    /* footer */
+    footer {
+        padding: 7vw 0;
+    }
+    footer ul li {
+        font-size: 3.5vw;
+    }
+}
+
+
+/*PC***/
+@media screen and (min-width: 980px) {
+
+    /* sect1 */
+    .sect1 {
+        height: 95vh;
+    }
+
+    nav {
+        width: 30%;
+    }
+
+    button {
+        font-size: 1.4vw;
+        padding: 1vw 3vw;
+    }
+
+    h2 {
+        font-size: 3.5vw;
+    }
+
+    .intro p {
+        font-size: 1.5vw;
+    }
+
+
+    /* sect2 */
+    .col1 {
+        width: 45%;
+        padding-right: 2vw;
+    }
+
+    .col2 {
+        width: 55%;
+    }
+
+    .title {
+        font-size: 59px;
+    }
+
+    .sub-title {
+        font-size: 39px;
+    }
+
+    .col2 p {
+        font-size: 25px;
+    }
+
+    .sect-text {
+        margin: 2vw 0;
+    }
+
+    /* sect3 */
+    .sect3 ul.col li figcaption {
+        font-size: 2vw;
+        padding: 3vw 1vw;
+    }
+
+    /* sect4 */
+    .sect4 .container ul li {
+        width: 49%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* sect5 */
+    .sect5{height: 50vh;}
+    .intro2{ left: 3%;}
+    .intro2 p {
+        font-size: 2vw; }
+    
+    /* footer */
+    footer {padding: 69px 0;}
+    footer ul li {
+        font-size: 35px;
+    }
+}

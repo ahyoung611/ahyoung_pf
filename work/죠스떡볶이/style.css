@@ -1,0 +1,467 @@
+.flex {
+    display: flex;
+}
+
+.space-b {
+    justify-content: space-between;
+}
+
+.align-i {
+    align-items: center;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    background-image: url(./images/header_bg.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 99;
+}
+
+header .container {
+    width: 1536px;
+    margin: auto;
+    height: 110px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 img {
+    width: 215px;
+}
+
+header .btn {
+    padding-left: 20px;
+}
+
+header .btn a.brand {
+    background-color: #c91518;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+header .btn a.brand img {
+    width: 80%;
+    padding: 10px;
+}
+
+nav {
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul {
+    gap: 70px;
+    padding: 30px;
+}
+
+nav ul li {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.wrap {
+    position: relative;
+    top: 110px;
+}
+
+
+/* sect1 */
+.sect1 {
+    overflow: hidden;
+}
+
+.slogan {
+    text-align: center;
+    position: relative;
+    color: #fff;
+    justify-content: center;
+}
+
+.slogan .col1 {
+    position: absolute;
+    top: 98px;
+}
+
+.sect1 h2 {
+    font-size: 1.5rem;
+}
+
+.sect1 h2 img {
+    width: 635px;
+}
+
+.sect1 .slogan .text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #fff;
+    padding-top: 10px;
+}
+
+
+/* 2~ 공용 */
+
+.btn img {
+    width: 50%;
+    padding-top: 50px;
+}
+
+.container2 {
+    max-width: 1250px;
+    margin: auto;
+    align-items: center;
+}
+
+.text1 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    padding-bottom: 10px;
+}
+
+.text2 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+
+
+/* sect2 */
+.sect2 {
+    background-image: url(./images/bg.jpg);
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+
+
+/* col1 */
+.sect2 .col1 {
+    width: 40%;
+}
+
+.sect2 .col1 .hgroup {
+    width: 100%;
+}
+
+.sect2 .col1 .hgroup h2 img {
+    max-width: 350px;
+    padding: 5px 0;
+}
+
+.sect2 .col1 .hgroup ul {
+    gap: 5px;
+    padding-top: 50px;
+}
+
+.sect2 .col1 .hgroup ul li img {
+    width: 80%;
+}
+
+/* col2 */
+.sect2 .col2 {
+    width: 60%;
+    align-self: flex-end;
+}
+
+.sect2 .col2 .phone1 .li img.sect2-visual {
+    width: 100%;
+}
+
+.sect2 .col2 .phone1 .li {
+    position: relative;
+}
+
+.sect2 .col2 .phone1 .li ul {
+    position: absolute;
+    top: 328px;
+    right: -98px;
+}
+
+.sect2 .col2 .phone1 .li ul li img {
+    width: 70%;
+}
+
+/* sect3 */
+
+.sect3 {
+    background-image: url(./images/bg2.jpg);
+    background-position: center;
+    position: relative;
+}
+
+.sect3 .col1 {
+    width: 60%;
+    align-self: flex-end;
+}
+
+.sect3 .col1 .phone img.sect3-visual {
+    width: 100%;
+    padding-top: 40px;
+}
+
+.sect3 .col2 {
+    width: 40%;
+}
+
+.sect3 .col2 .hgroup {
+    width: 100%;
+}
+
+.sect3 .col2 .hgroup h2 img {
+    max-width: 350px;
+    padding: 5px 0;
+}
+
+
+
+/* sect4 */
+.sect4 {
+    background-image: url(./images/bg.jpg);
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+
+.sect4 .col2 {
+    width: 55%;
+}
+
+.sect4 .col2 .phone img.sect3-visual {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.sect4 .col1 {
+    width: 40%;
+}
+
+.sect4 .col1 .hgroup {
+    width: 100%;
+}
+
+.sect4 .col1 .hgroup h2 img {
+    max-width: 350px;
+    padding: 5px 0;
+}
+
+.sect4 .col1 .hgroup .text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* sect5 */
+.sect5 {
+    background-image: url(./images/bg-1.jpg);
+    background-position: center;
+    position: relative;
+    padding: 100px 0;
+}
+
+.sect5 .col1 {
+    padding-bottom: 50px;
+}
+
+.sect5 .col1 .hgroup {
+    width: 50%;
+}
+
+.sect5 .col1 .hgroup h2 img {
+    max-width: 288px;
+    padding: 5px 0;
+}
+
+.sect5 .col1 .view img {
+    max-width: 238px;
+}
+
+.sect5 .col2 .graph {
+    position: relative;
+    height: 554px;
+    background-image: url(img/5-5.png), url(./images/overlay.jpg);
+}
+
+.sect5 .col2 .graph ul.price li {
+    position: absolute;
+}
+
+.sect5 .col2 .graph ul.price li:nth-child(1) {
+    top: 267px;
+    left: 267px;
+}
+
+.sect5 .col2 .graph ul.price li:nth-child(2) {
+    top: 315px;
+    left: 429px;
+}
+
+.sect5 .col2 .graph ul.price li:nth-child(3) {
+    top: 248px;
+    left: 605px;
+}
+
+.sect5 .col2 .graph ul.price li:nth-child(4) {
+    top: 185px;
+    left: 791px
+}
+
+.sect5 .col2 .graph ul.price li:nth-child(5) {
+    top: 173px;
+    left: 953px
+}
+
+
+/* sect6 */
+.sect6 {
+    background-color: #FAF1DD;
+    padding: 200px 0;
+}
+
+.sect6 .col1 {
+    padding-bottom: 30px;
+}
+
+.sect6 .col1 .hgroup {
+    width: 100%;
+}
+
+.sect6 .col1 .hgroup h2 img {
+    max-width: 238px;
+    padding: 10px 0;
+}
+
+.sect6 .in {
+    height: 1500px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ff0000;
+}
+
+
+/* sect7 */
+.sect7 {
+    position: relative;
+    background-image: url(./images/7-3.png), url(./images/bg-7.jpg);
+    background-position: right, center;
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+}
+
+.sect7 .col1 {
+    width: 50%;
+    padding: 200px 0;
+}
+
+.sect7 .col1 .hgroup h2 img {
+    width: 50%;
+    max-width: 288px;
+    padding: 5px 0;
+}
+
+.sect7 .col2 {
+    position: relative;
+}
+
+.sect7 .col2 figure {
+    position: absolute;
+    top: -160px;
+    right: -470px;
+}
+
+/* sect8 */
+.sect8 {
+    background-color: #D71920;
+    background-image: url(./images/8-bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 830px;
+    color: #fff;
+}
+
+.sect8 .col1 {
+    position: relative;
+    width: 100%;
+    padding: 200px 0;
+}
+
+.sect8 .col1 .hgroup {
+    position: absolute;
+    left: 800px;
+}
+
+.sect8 .col1 .hgroup h2 img {
+    max-width: 360px;
+    padding: 10px 0;
+}
+
+/* sect9 */
+.sect9 {
+    height: 160vh;
+    background-image: url(./images/9-bg.jpg);
+    background-position: center;
+}
+
+.sect9 .container2 {
+    position: relative;
+}
+
+.sect9 .col1 {
+    width: 45%;
+    padding: 100px 0;
+}
+
+.sect9 .col1 h2 img {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.sect9 .col2 {
+    position: absolute;
+    top: 230px;
+    right: 0;
+    width: 40%;
+}
+
+/* footer */
+footer {
+    background-color: #c91518;
+    min-height: 290px;
+}
+
+footer .container2 {
+    min-height: 290px;
+    align-items: center;
+}
+
+footer .container2 .box .text3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+footer .container2 .box .text4 {
+    color: #F9BE00;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 20px 0 15px 0;
+}
+
+footer .container2 .box .text5 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}

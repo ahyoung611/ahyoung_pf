@@ -1,0 +1,383 @@
+@charset "UTF-8";
+@import url(../reset.css);
+@font-face {
+  font-family: GentleMonsterSerif-Regular;
+  src: url(./font/GentleMonsterSerif-Regular.woff2);
+}
+@font-face {
+  font-family: myFirstFont-gBd;
+  src: url(./font/SDGothicNeoaTTF-gBd.woff2);
+}
+@font-face {
+  font-family: myFirstFont-fSm;
+  src: url(./font/SDGothicNeoaTTF-fSm.woff2);
+}
+@font-face {
+  font-family: SDGothicNeoaTTF;
+  src: url(./font/SDGothicNeoaTTF-eMd.woff2);
+}
+body {
+  font-family: GentleMonsterSerif-Regular;
+  background-color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-r {
+  flex-direction: row-reverse;
+}
+
+section {
+  text-align: center;
+  overflow: hidden;
+}
+section button {
+  border: none;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 8px 15px;
+  margin-top: 20px;
+}
+section h1 {
+  font-family: SDGothicNeoaTTF;
+  font-weight: 600;
+}
+section h2 {
+  font-family: myFirstFont-fSm;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+section p {
+  line-height: 1.5;
+  padding: 10px 20px;
+}
+section .art1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section .art2 {
+  height: 100%;
+  background-repeat: no-repeat;
+}
+section .bg-b {
+  background-color: #f3f4f6;
+}
+section.sect1 .art2 {
+  background-image: url(./images/main-bg.png);
+}
+section.sect2 {
+  background-image: url(./images/옵티컬\ 컬렉션.png);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+section.sect2 .bg {
+  padding-top: 160px;
+}
+section.sect3 .item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+section.sect3 .text-box {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.sect4 .art1 {
+  background-image: url(./images/뮈글러/뮈글러.png);
+  background-repeat: no-repeat;
+}
+section.sect4 .art2 .summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+section.sect4 .art2 .summary .product {
+  width: 50%;
+  padding: 20px;
+}
+section.sect4 .art2 .summary .product img {
+  width: 100%;
+}
+section.sect4 .art2 .summary .product ul {
+  padding-top: 10px;
+}
+section.sect4 .art2 .summary .product-summary {
+  width: 50%;
+}
+section.sect5 .art1 {
+  background-image: url(./images/젠틀살롱/젠틀\ 살롱\ .png);
+  background-repeat: no-repeat;
+}
+section.sect5 .art2 .summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+section.sect5 .art2 .summary .product {
+  width: 50%;
+  padding: 20px;
+}
+section.sect5 .art2 .summary .product img {
+  width: 100%;
+}
+section.sect5 .art2 .summary .product ul {
+  padding-top: 10px;
+}
+section.sect5 .art2 .summary .product-summary {
+  width: 50%;
+}
+section.sect6 .swiper {
+  width: 100%;
+  height: 100%;
+}
+section.sect6 .swiper .swiper-slide {
+  text-align: center;
+}
+section.sect6 .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 13px;
+  }
+  section article {
+    width: 100%;
+    height: 50%;
+  }
+  section.sect1 {
+    height: 100vh;
+  }
+  section.sect1 .art2 {
+    background-size: 100%;
+  }
+  section.sect2 {
+    height: 100vh;
+  }
+  section.sect3 {
+    height: 150vh;
+  }
+  section.sect3 .grid-m {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(36, 1fr);
+    color: #fff;
+    text-align: justify;
+  }
+  section.sect3 .grid-m .item1 {
+    grid-column: 1/span 5;
+    grid-row: 1/span 14;
+    background-image: url(./images/메종/메종-마르지엘라.png);
+  }
+  section.sect3 .grid-m .item2 {
+    grid-column: 1/span 5;
+    grid-row: 15/span 4;
+    padding: 25px;
+  }
+  section.sect3 .grid-m .item3 {
+    grid-column: 1/span 3;
+    grid-row: 19/span 4;
+    background-image: url(./images//메종/메종4-1.png);
+  }
+  section.sect3 .grid-m .item4 {
+    grid-column: 4/span 2;
+    grid-row: 19/span 2;
+    background-image: url(./images//메종/메종2.png);
+  }
+  section.sect3 .grid-m .item5 {
+    grid-column: 4/span 2;
+    grid-row: 21/span 2;
+    background-image: url(./images//메종/메종3.png);
+  }
+  section.sect3 .grid-m .item6 {
+    grid-column: 1/span 5;
+    grid-row: 23/span 12;
+    background-image: url(./images//메종/메종5.png);
+  }
+  section.sect3 .grid-m .item7 {
+    grid-column: 1/span 5;
+    grid-row: 35/span 2;
+  }
+  section.sect4 {
+    width: 100%;
+  }
+  section.sect4 .art1 {
+    height: 50vh;
+    background-size: cover;
+  }
+  section.sect4 .art2 {
+    height: 150vh;
+  }
+  section.sect4 .art2 .summary {
+    height: 50vh;
+  }
+  section.sect5 {
+    width: 100%;
+  }
+  section.sect5 .art1 {
+    height: 50vh;
+    background-size: cover;
+  }
+  section.sect5 .art2 {
+    height: 200vh;
+  }
+  section.sect5 .art2 .summary {
+    height: 50vh;
+  }
+  section.sect6 {
+    height: 80vh;
+  }
+  section.sect6 .style {
+    margin: 60px 0 55px 0;
+  }
+  section.sect6 .swiper .swiper-slide {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 801px) {
+  h1 {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  button {
+    font-size: 18px;
+  }
+  section {
+    height: 100vh;
+  }
+  section article {
+    width: 50%;
+    height: 100%;
+  }
+  section.sect1 {
+    display: flex;
+  }
+  section.sect1 article {
+    height: 100%;
+  }
+  section.sect1 .art2 {
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: right;
+  }
+  section.sect3 .grid-m {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    color: #fff;
+    text-align: justify;
+  }
+  section.sect3 .grid-m .item1 {
+    grid-column: 1/span 5;
+    grid-row: 1/span 19;
+    background-image: url(./images//메종/메종-마르지엘라.png);
+  }
+  section.sect3 .grid-m .item2 {
+    grid-column: 6/span 2;
+    grid-row: 1/span 11;
+    padding: 25px;
+  }
+  section.sect3 .grid-m .item3 {
+    grid-column: 6/span 2;
+    grid-row: 12/span 7;
+    background-image: url(./images//메종/메종4-0.png);
+  }
+  section.sect3 .grid-m .item4 {
+    grid-column: 8/span 2;
+    grid-row: 1/span 3;
+    background-image: url(./images//메종/메종2.png);
+  }
+  section.sect3 .grid-m .item5 {
+    grid-column: 10/span 2;
+    grid-row: 1/span 3;
+    background-image: url(./images//메종/메종3.png);
+  }
+  section.sect3 .grid-m .item6 {
+    grid-column: 8/span 4;
+    grid-row: 4/span 12;
+    background-image: url(./images//메종/메종5.png);
+  }
+  section.sect3 .grid-m .item7 {
+    grid-column: 8/span 4;
+    grid-row: 16/span 3;
+  }
+  section.sect4 {
+    display: flex;
+    height: 300vh;
+  }
+  section.sect4 .art1 {
+    height: 100%;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: -50px;
+  }
+  section.sect4 .summary {
+    height: 100vh;
+    overflow: hidden;
+  }
+  section.sect5 {
+    display: flex;
+    height: 400vh;
+    flex-direction: row-reverse;
+  }
+  section.sect5 .art1 {
+    height: 100%;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: right;
+  }
+  section.sect5 .summary {
+    height: 100vh;
+    overflow: hidden;
+  }
+  section.sect6 .style {
+    margin: 60px 0 55px 0;
+  }
+  section.sect6 .swiper-slide {
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}

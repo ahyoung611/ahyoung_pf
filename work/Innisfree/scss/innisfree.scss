@@ -1,0 +1,311 @@
+@import url(../reset.css);
+
+@font-face {
+    font-family: NotoSansCJKkr-Light;
+    src: url(./font/NotoSansCJKkr-Light.woff);
+}
+
+@font-face {
+    font-family: GmarketSansBold;
+    src: url(./font/GmarketSansBold.otf);
+}
+
+@font-face {
+    font-family: GmarketSansMedium;
+    src: url(./font/GmarketSansMedium.otf);
+}
+
+
+
+section {
+    width: 100%;
+    color: #fff;
+    background-color: #fff;
+    font-family: GmarketSansMedium;
+
+    h2 {
+        font-size: 62px;
+        color: #fff;
+    }
+
+    h3 {
+        font-family: GmarketSansBold;
+        font-weight: 300;
+        font-size: 48px;
+    }
+
+    .w-box {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+
+    .inner {
+        width: 900px;
+        margin: auto;
+
+    }
+
+    figure {
+        font-size: 38px;
+        position: relative;
+
+
+        .s-title {
+            width: 100%;
+            position: absolute;
+            top: 100px;
+
+            .w-box {
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            padding: 100px 0;
+            line-height: 1.3;
+        }
+    }
+
+    &.sect1 {
+        .art1 {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-weight: 500;
+                font-size: 32px;
+                background-color: rgba(255, 255, 255, 0.8);
+
+            }
+        }
+
+        .art2 {
+
+            figure {
+                margin-top: 50px;
+            }
+
+            p {
+                padding-bottom: 20px;
+                font-size: 30px;
+                color: #333;
+            }
+
+        }
+
+        .art3 {
+            // font-size: 48px;
+            text-align: center;
+
+            figure {
+                .s-title {
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    .w-box {
+                        background-color: rgba(255, 255, 255, 0.8);
+                    }
+                }
+
+                figcaption {
+                    .w-box {
+                        color: #fff;
+                    }
+                }
+            }
+
+        }
+
+        .art4 {
+            .s-title {
+                left: 10%;
+            }
+
+            .w-box {
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 50px;
+            }
+        }
+
+        .art5 {
+            margin-top: 50px;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 500px;
+            }
+
+
+        }
+    }
+}
+
+@import url(/reset.css);
+
+@font-face {
+    font-family: NotoSansCJKkr-Light;
+    src: url(./font/NotoSansCJKkr-Light.woff);
+}
+
+@font-face {
+    font-family: GmarketSansBold;
+    src: url(./font/GmarketSansBold.otf);
+}
+
+@font-face {
+    font-family: GmarketSansMedium;
+    src: url(./font/GmarketSansMedium.otf);
+}
+
+
+
+section {
+    width: 100%;
+    color: #fff;
+    background-color: #fff;
+    font-family: GmarketSansMedium;
+
+    h2 {
+        font-size: 62px;
+        color: #fff;
+    }
+
+    h3 {
+        font-family: GmarketSansBold;
+        font-weight: 300;
+        font-size: 48px;
+    }
+
+    .w-box {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+
+    .inner {
+        width: 900px;
+        margin: auto;
+
+    }
+
+    figure {
+        font-size: 38px;
+        position: relative;
+
+
+        .s-title {
+            width: 100%;
+            position: absolute;
+            top: 100px;
+
+            .w-box {
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            padding: 100px 0;
+            line-height: 1.3;
+        }
+    }
+
+
+
+    &.sect1 {
+        .art1 {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-weight: 500;
+                font-size: 32px;
+                background-color: rgba(255, 255, 255, 0.8);
+
+            }
+        }
+
+        .art2 {
+
+            figure {
+                margin-top: 50px;
+            }
+
+            p {
+                padding-bottom: 20px;
+                font-size: 30px;
+                color: #333;
+            }
+
+        }
+
+        .art3 {
+            // font-size: 48px;
+            text-align: center;
+
+            figure {
+                .s-title {
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    .w-box {
+                        background-color: rgba(255, 255, 255, 0.8);
+                    }
+                }
+
+                figcaption {
+                    .w-box {
+                        color: #fff;
+                    }
+                }
+            }
+
+        }
+
+        .art4 {
+            .s-title {
+                left: 10%;
+            }
+
+            .w-box {
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 50px;
+            }
+        }
+
+        .art5 {
+            margin-top: 50px;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 500px;
+            }
+
+
+        }
+    }
+}

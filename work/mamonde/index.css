@@ -1,0 +1,376 @@
+@import url(../reset.css);
+@font-face {
+  font-family: Pretendard-Regular;
+  src: url(./font/Pretendard-Regular.subset.woff2);
+}
+@font-face {
+  font-family: Pretendard-Medium;
+  src: url(./font/Pretendard-Medium.subset.woff2);
+}
+@font-face {
+  font-family: Pretendard-SemiBold;
+  src: url(./font/Pretendard-SemiBold.subset.woff2);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  font-family: Pretendard-Medium;
+  z-index: 99;
+}
+header .menu-icon {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+header .menu-icon .bar1,
+header .menu-icon .bar2,
+header .menu-icon .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+header h1 {
+  width: 80px;
+}
+header h1 img {
+  width: 100%;
+}
+header nav {
+  display: none;
+  width: 90%;
+  font-size: 18px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+header nav ul li {
+  padding: 20px;
+  position: relative;
+}
+header nav ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #fccc00;
+  width: 100%;
+  height: 3px;
+  transition: 0.3s;
+  opacity: 0;
+}
+header nav ul li.on::after {
+  opacity: 1;
+}
+header nav ul li a {
+  position: relative;
+}
+header nav ul li.on a::after {
+  width: 100%;
+}
+
+section {
+  font-family: Pretendard-Regular;
+  max-width: 100%;
+  height: 100vh;
+}
+section h2 {
+  font-family: Pretendard-SemiBold;
+  font-size: 60px;
+  line-height: 1.5;
+}
+section h3 {
+  font-size: 40px;
+}
+section p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+@keyframes icon-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+section.sect1 {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+  font-family: Pretendard-SemiBold;
+  transition: 0.3s;
+  opacity: 0;
+}
+section.sect1.on {
+  opacity: 1;
+}
+section.sect1.on .desc {
+  opacity: 1;
+  bottom: 80px;
+}
+section.sect1 .desc {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -100px;
+  line-height: 1.5;
+  transition: 1s;
+  opacity: 0;
+}
+section.sect2, section.sect4 {
+  transition: 0.3s;
+  opacity: 0;
+}
+section.sect2 h3, section.sect4 h3 {
+  padding-bottom: 30px;
+}
+section.sect2.on, section.sect4.on {
+  opacity: 1;
+}
+section.sect2.on .desc, section.sect4.on .desc {
+  opacity: 1;
+  top: 50%;
+}
+section.sect2 .icon, section.sect4 .icon {
+  width: 80px;
+  height: 80px;
+  animation: icon-rotate 5s linear infinite;
+  transform-origin: 50% 50%;
+}
+section.sect2 .icon img, section.sect4 .icon img {
+  width: 100%;
+}
+section.sect2 .art1, section.sect4 .art1 {
+  position: relative;
+}
+section.sect2 .desc, section.sect4 .desc {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  opacity: 0;
+  color: rgba(0, 0, 0, 0.9);
+}
+section.sect2 .art2 video, section.sect4 .art2 video {
+  width: 100%;
+  margin-top: -100px;
+}
+section.sect2 .icon {
+  position: absolute;
+  left: 150px;
+  top: -100px;
+}
+section.sect4 .icon {
+  position: absolute;
+  left: 700px;
+  top: 320px;
+}
+section.sect3 {
+  position: relative;
+  background-color: #000;
+}
+section.sect3 .video {
+  position: absolute;
+}
+section.sect3 .video video {
+  width: 100%;
+}
+section.sect3 .desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  color: #fff;
+  opacity: 0;
+  transition: 1s;
+}
+section.sect3 .desc .icon {
+  display: inline-block;
+  animation: icon-rotate 5s linear infinite;
+  transform-origin: 50% 50%;
+}
+section.sect3 .desc .icon img {
+  width: 100%;
+}
+section.sect3 .desc .item {
+  background-image: url(./images/mamonde-item.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+section.sect5 {
+  overflow: hidden;
+  background-color: rgba(207, 236, 179, 0.5);
+}
+section.sect5 ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.sect5 ul li {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: 0.5s;
+}
+section.sect5 ul li:hover .desc {
+  opacity: 1;
+  bottom: 60px;
+}
+section.sect5 ul li.item1 {
+  background-image: url(./images/item1.jpg);
+}
+section.sect5 ul li.item2 {
+  background-image: url(./images/item2.jpg);
+}
+section.sect5 ul li.item3 {
+  background-image: url(./images/item3.png);
+}
+section.sect5 ul li .desc {
+  position: absolute;
+  left: 50px;
+  bottom: -80px;
+  opacity: 0;
+  transition: 1.2s;
+}
+section.sect5 ul li .desc button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+section.sect5 ul li .desc button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  header .menu-icon {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+  }
+  section h2 {
+    font-size: 7vw;
+  }
+  section h3 {
+    font-size: 5vw;
+  }
+  section p {
+    font-size: 3vw;
+  }
+  section.sect1 {
+    background-image: url(./images/brand_story_mo-bg.jpg);
+  }
+  section.sect1 h2 {
+    font-size: 8vw;
+  }
+  section.sect1 p {
+    font-size: 4vw;
+  }
+  section.sect2 > article, section.sect4 > article {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+  }
+  section.sect3.on {
+    opacity: 1;
+  }
+  section.sect3.on .desc {
+    opacity: 1;
+    top: 48%;
+  }
+  section.sect3 .video {
+    width: 95%;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  section.sect3 .desc {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80%;
+  }
+  section.sect3 .desc .icon {
+    width: 35px;
+  }
+  section.sect3 .desc .item {
+    width: 300px;
+    height: 300px;
+  }
+  section.sect5 li:hover {
+    flex: 10;
+  }
+}
+@media screen and (min-width: 801px) {
+  header nav {
+    display: block;
+  }
+  section.sect1 {
+    background: url(./images/brand_story_bg.jpg);
+  }
+  section.sect1 h2 {
+    font-size: 5vw;
+  }
+  section.sect1 p {
+    font-size: 2vw;
+  }
+  section.sect2, section.sect4 {
+    display: flex;
+  }
+  section.sect2 > article, section.sect4 > article {
+    width: 50%;
+    overflow: hidden;
+  }
+  section.sect3.on {
+    opacity: 1;
+  }
+  section.sect3.on .desc {
+    opacity: 1;
+    top: 25%;
+  }
+  section.sect3 .video {
+    width: 58%;
+    top: 27%;
+    left: 2%;
+  }
+  section.sect3 .video video {
+    width: 100%;
+  }
+  section.sect3 .desc {
+    right: 7%;
+    top: 50%;
+  }
+  section.sect3 .desc .icon {
+    width: 60px;
+  }
+  section.sect3 .desc .item {
+    width: 400px;
+    height: 350px;
+  }
+  section.sect5 li:hover {
+    flex: 4;
+  }
+}

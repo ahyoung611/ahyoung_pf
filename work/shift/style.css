@@ -1,0 +1,258 @@
+html {
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-c {
+    align-items: center;
+}
+
+.just-c {
+    justify-content: center;
+}
+
+img {
+    vertical-align: top;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+    max-width: 1920px;
+    /* background만 쓸경우 기본값이 들어간다. */
+    background: url(./images/욕실배경bg.png) no-repeat;
+    /* background에 기본값이 들어가기 때문에 position을 아래에 넣어야 한다. */
+    background-position: center;
+    background-size: cover;
+}
+
+/* header */
+header {
+    position: fixed;
+    left: 9%;
+    top: 9%;
+}
+
+header h1 img {
+    width: 13%;
+    filter: drop-shadow(0 0 10px #000);
+}
+
+header p {
+    color: #fff;
+    font-size: 28px;
+    margin-top: 34px;
+    text-shadow: 0 0 20px #000;
+}
+
+header p b {
+    color: #000f9f;
+    font-weight: 900;
+    text-shadow: -1px 0px rgb(255, 255, 255), 0px 1px rgb(255, 255, 255), 1px 0px rgb(255, 255, 255), 0px -1px rgb(255, 255, 255);
+}
+
+/* main */
+main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-content {
+    width: 800px;
+    position: relative;
+    top: 26%;
+    left: 8.5%;
+    z-index: 99;
+}
+
+ul.menu {
+    color: #000f9f;
+    gap: 12px;
+    margin-top: 21px;
+    position: relative;
+    z-index: 999;
+
+}
+
+ul.menu li a{
+    transition: .35s;
+}
+
+ul.menu li:hover a {
+    background: #000f9f;
+    color: #fff;
+    border: 3px solid #000f9f;
+}
+
+
+ul.menu a {
+    display: block;
+    width: 175px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 99px;
+    font-size: 15px;
+    background: #fff;
+    font-weight: 800;
+    border: 3px solid #ffffff;
+
+}
+
+/* video */
+main .video {
+    position: relative;
+}
+
+main .video video {
+    width: 100%;
+    border: 5px solid #ffffff;
+}
+
+/* 기준은 화면의 가운데다!! */
+/* 바디를 기준으로 잡아야 해서 left, top 50%  margin-left, top -px로 자리 잡아줌*/
+.main-visual {
+    position: absolute;
+    left: 63%;
+    top: 0;
+    transition: 1s;
+    overflow: hidden;
+    /* margin-left: -100px; margin-top: -100px; */
+}
+
+.main-visual.on {
+    transform: translateX(350px);
+}
+
+.main-visual img {
+    width: 600px;
+}
+
+/* sect1 */
+#sect1 {
+    display: none;
+    position: absolute;
+    width: 800px;
+    height: 452px;
+    left: 50%;
+    top: 31%;
+    /* transform: translate(-50%, -50%); */
+    transform: translateX(-50%);
+    
+    
+}
+
+#sect1 span {
+    position: absolute;
+    background: #ffffff;
+}
+
+
+span.top {
+    width: 0;
+    height: 6px;
+    left: 0;
+    top: 0;
+}
+
+span.right {
+    width: 6px;
+    height: 0;
+    top: 0;
+    right: 0;
+}
+
+span.bottom {
+    width: 0;
+    height: 6px;
+    right: 0;
+    bottom: 0;
+}
+
+span.left {
+    width: 6px;
+    height: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#sect1 figure {
+    display: none;
+}
+
+.use video {
+    width: 100%;
+}
+
+.close1 img {
+    width: 20%;
+}
+
+a.close1 {
+    position: absolute;
+    right: -118px;
+    top: 15px;
+    opacity: .5;
+    transition: .35s;
+    
+}
+
+a.close1:hover{
+    opacity: 1;
+}
+
+/* sect2 */
+#sect2 {
+    border: 5px solid #ffffff;
+    display: none;
+    background: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+.close2 img {
+    width: 20%;
+}
+
+a.close2 {
+    position: absolute;
+    right: -123px;
+    top: 10px;
+    opacity: .5;
+    z-index: 99; 
+    transition: .35s;
+}
+
+a.close2:hover{
+    opacity: 1;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

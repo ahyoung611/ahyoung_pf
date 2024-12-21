@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /* background-image: url(./images/가상배경0.jpg); */
+    background-image: url(./images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* height: 100vh; */
+    font-family: 'GmarketSansMedium';
+    font-size: 14px;
+    color:#fff;
+}
+
+
+
+/* 공통속성 */
+.flex {
+    display: flex;
+}
+
+.just-c {
+    justify-content: center;
+}
+
+.just-sb {
+    justify-content: space-between;
+}
+
+.align-c {
+    align-items: center;
+}
+
+.wrap {
+    max-width: 1420px;
+    margin: auto;
+}
+
+.wrap::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* header--------------------- */
+h1 {
+    height: 16vw;
+    background: url(./images/몬스터근무일지\ 캐릭터.png) no-repeat center;
+    background-size: contain;
+    position: relative;
+}
+
+nav {
+    font-size: 20px;
+}
+
+nav ul li {
+    text-align: center;
+    float: left;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-image: url(./images/rug.png);
+}
+
+nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav ul li:hover {
+    background-position: center bottom;
+    /* color: #fff; */
+    color: #0394e8;
+}
+
+nav ul li a {
+    display: block;
+}
+
+main{
+    padding-bottom: 100px;
+}
+
+/* intro */
+.intro {
+    text-align: center;
+}
+
+.intro-contents {
+    margin: 10px 0;
+}
+
+.summary {
+    line-height: 2;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.video {
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+.video video {
+    width: 100%;
+}
+
+
+/* list */
+.list {
+    text-align: center;
+}
+
+h2 {
+    padding: 30px 0;
+    color: #0394e8;
+    font-size: 24px;
+}
+
+span {
+    color: #eee
+}
+
+
+article ul li {
+    float: left;
+    height: 293px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+article img {
+    width: 100%;
+}
+
+.list figcaption {
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 99px;
+    padding: 5px 20px;
+    margin: 15px 0;
+}
+
+.list figcaption:hover {
+    color: #fff;
+    background-color: #0394e8;
+}
+
+
+
+@media (max-width:600px) {
+    nav {
+        width: 100%;
+    }
+
+    nav ul{
+        padding-left: 20px;
+    }
+
+    nav ul li {
+        width: 30%;
+        margin: 0 5px;
+        padding-top: 10px;
+    }
+
+    h1 {
+        background: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    h1 img {
+        width: 50%;
+        position: relative;
+        top: 0%;
+        left: 0%;
+    }
+
+    article ul li {
+        width: 49%;
+    }
+
+    .summary {
+        text-align: center;
+    }
+}
+
+@media (min-width:601px) {
+    header {
+        width: 26%;
+        float: left;
+    }
+
+    main {
+        width: 72%;
+        float: right;
+    }
+
+    nav {
+        margin-top: 220px;
+        font-weight: bold;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 0 10px;
+        padding-top: 10px;
+    }
+
+    article ul li {
+        width: 33%;
+    }
+
+    footer {
+        width: 72%;
+        float: right;
+    }
+
+    h1 {
+        margin: 30px 0;
+    }
+
+    h1 img {
+        width: 100%;
+        position: absolute;
+        top: 110%;
+        left: 5%;
+    }
+
+    .summary {
+        text-align: center;
+    }
+
+}
+
+@media (min-width:1300px) {
+    header {
+        width: 100%;
+        float: none;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    h1 {
+        width: 20%;
+        float: left;
+        margin-top: 125px;
+    }
+
+    nav {
+        width: 72%;
+        float: right;
+        
+    }
+
+    nav ul li {
+        width: 30%;
+        margin: 20px 15px 0 15px;
+        padding-top: 10px;
+    }
+
+    .intro-contents {
+        float: left;
+        width: 100%;
+    }
+
+    .summary {
+        width: 40%;
+        float: left;
+        text-align: left;
+    }
+
+    .video {
+        width: 60%;
+        float: right;
+        margin-top: 0;
+    }
+
+
+    article ul li {
+        width: 24%;
+    }
+
+}

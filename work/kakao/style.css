@@ -1,0 +1,317 @@
+body {
+    background-color: #fff;
+}
+
+header {
+    height: 102px;
+    background-image: url(./images/bg_header_wrap.gif);
+    border-bottom: 2px solid #eeeeee;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+.container h1 img {
+    width: 60%;
+}
+
+.wrap {
+    position: relative;
+    top: 30px;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+header .container {
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* nav */
+nav {
+    align-self: flex-end;
+}
+
+/* nav{position: relative; top: 15px;} */
+
+nav ul {
+    gap: 110px;
+}
+
+
+nav ul li:hover a {
+    background-position-y: -70px;
+}
+
+nav ul li a {
+
+    background-image: url(./images/bg_gnb.png);
+    height: 60px;
+    display: block;
+    color: transparent;
+}
+
+nav ul li:nth-child(1) a {
+    width: 116px;
+}
+
+nav ul li:nth-child(2) a {
+    width: 79px;
+    background-position-x: -124px;
+}
+
+nav ul li:nth-child(3) a {
+    width: 39px;
+    background-position-x: -211px;
+}
+
+nav ul li:nth-child(4) a {
+    width: 78px;
+    background-position-x: -259px;
+}
+
+nav ul li.business {
+    padding-right: 40px;
+}
+
+/* main */
+main {
+    width: 712px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+aside {
+    width: 470px;
+}
+
+div.kakao {
+    background-image: url(./images/kakao.jpg);
+}
+
+.y:hover {
+    background-position-y: -205px;
+    transition: .35s
+}
+
+.x:hover {
+    background-position-x: -226px;
+    transition: .35s
+}
+
+
+main>div {
+    height: 205px;
+    width: 226px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+main>div.wid2 {
+    width: 469px;
+}
+
+div.kakaotlak {
+    background-image: url(./images/kakaotalk.jpg);
+}
+
+div.open {
+    background-image: url(./images/open.jpg);
+}
+
+div.story {
+    background-image: url(./images/story.jpg);
+}
+
+div.shopping {
+    background-image: url(./images/shopping.jpg);
+}
+
+div.bank {
+    background-image: url(./images/bank.jpg);
+}
+
+div.map {
+    background-image: url(./images/map.jpg);
+}
+
+div.kakaot {
+    background-image: url(./images/kakaot1.jpg);
+}
+
+div.customer {
+    background-image: url(./images/customer1.jpg);
+}
+
+div.work {
+    background-image: url(./images/work.jpg);
+}
+
+
+/* input[type="text"]{ padding: 10px;}
+input[type="password"]{ padding: 10px;} */
+
+
+/* aside */
+aside {
+    width: 470px;
+}
+
+.input-text input {
+    border: 1PX solid #eeeeee;
+    display: block;
+    margin-right: 0;
+    font-size: 15px;
+    width: 340px;
+    height: 48px;
+    padding: 14px 25px;
+    text-align: left;
+
+}
+
+.sor {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn input {
+    padding: 39.5px 37px;
+    background-color: #ffcf22;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+}
+
+
+.gnb {
+
+    gap: 20px;
+    font-size: 12px;
+    justify-content: space-between;
+    margin: 10px 0 20px 0;
+
+}
+
+
+.gnb .ga {
+    gap: 10px;
+
+
+}
+
+.gnb .info {
+    gap: 5px;
+}
+
+.login-ip img {
+    width: 18px;
+}
+
+.login-ip {
+    font-size: 16px;
+    background-color: #eeeeee;
+    padding: 12px 20px;
+    margin-bottom: 18px;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.slide {
+    position: relative;
+}
+
+.slide ul.arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.slide ul.arrow li {
+    width: 66px;
+    height: 66px;
+    background-image: url(./images/btn_rolling_arrow1.png);
+}
+
+.slide ul.arrow li:nth-child(2) {
+    background-position-x: -66px;
+}
+
+
+
+
+/* footer */
+footer {
+    position: relative;
+    top: 0px;
+}
+
+footer .container {
+    border-top: 2px solid #eeeeee;
+
+    height: 190px;
+}
+
+figure {
+    width: 20%;
+    align-items: center;
+    padding-right: 50px;
+}
+
+img.footer-logo {
+    width: 100%;
+
+}
+
+.footer-menu {
+    width: 80%;
+}
+
+footer ul {
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.adress {
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+footer .sub-adress {
+    font-size: 12px;
+}
+
+footer .sub-adress .copy {
+    padding-top: 10px;
+}
+
+footer .adress .relation-site {
+    width: 260px;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.site {
+    border: 1PX solid #d7d7d9;
+    width: 73%;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+button {
+    width: 26%;
+    background-color: #ffcf22;
+    border: none;
+    padding: 10px 20px;
+}

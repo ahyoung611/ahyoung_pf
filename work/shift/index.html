@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIFT</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1><img src="./images/SHIFT_LOGO.png" alt="h-logo"></h1>
+        <p>단 한번의 모션으로 하루의 시작과 끝을 <b>SHIFT</b> 하다</p>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="video">
+                <video src="./images/SHIFT(시프트) 비타민 캡슐샤워기 Teaser 🎬.mp4" loop autoplay muted></video>
+            </div>
+            <ul class="menu flex just-c">
+                <li class="shift"><a href="#">HOW TO USE</a></li>
+                <li class="vitamin"><a href="#">비타민 캡슐</a></li>
+            </ul>
+        </div>
+        <div class="main-visual ">
+            <img src="./images/샤워기.png" alt="">
+        </div>
+    </main>
+
+    <section id="sect1">
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+
+        <figure class="use">
+            <video src="./images/HOW TO USE. SHIFT(시프트) 비타민 캡슐 교체방법 (1).mp4" loop autoplay muted></video>
+            <a href="#" class="close1">
+                <img src="./images/close0.png" alt="close1">
+            </a>
+        </figure>
+
+    </section>
+
+    <section id="sect2">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/vitamin1.jpg" alt="비타민1"></div>
+                <div class="swiper-slide"><img src="./images/vitamin2.jpg" alt="비타민2"></div>
+                <div class="swiper-slide"><img src="./images/vitamin3.jpg" alt="비타민3"></div>
+                <div class="swiper-slide"><img src="./images/vitamin4.jpg" alt="비타민4"></div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <a href="#" class="close2">
+            <img src="./images/close0.png" alt="close2">
+        </a>
+    </section>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script/index.js"></script>
+   
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        
+          slidesPerView: 3,
+          spaceBetween: 0,
+          loop:true,
+          scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+          },
+        });
+      </script>
+
+</body>
+
+</html>

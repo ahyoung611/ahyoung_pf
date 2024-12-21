@@ -1,0 +1,487 @@
+@import url(../reset.css);
+@font-face {
+  font-family: NotoSans-Bold;
+  src: url(./font/NotoSans-Bold.woff);
+}
+@font-face {
+  font-family: NotoSans-Light;
+  src: url(./font/NotoSans-Light.woff);
+}
+@font-face {
+  font-family: NotoSans-Thin;
+  src: url(./font/NotoSans-Thin.woff);
+}
+@font-face {
+  font-family: NotoSans-Medium;
+  src: url(./font/NotoSans-Medium.woff);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(./font/Montserrat-Bold.woff);
+}
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(./font/Montserrat-Light.woff);
+}
+body {
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  border-bottom: 1px solid #efefef;
+}
+header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  background-color: #ffffff;
+  position: absolute;
+  top: 90px;
+  transition: 1s;
+}
+header.bon::before {
+  height: 400px;
+}
+header.on {
+  top: -100px;
+}
+header h1 {
+  width: 20%;
+  padding-left: 40px;
+}
+header h1 img {
+  width: 190px;
+}
+header nav {
+  font-family: NotoSans-Bold;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  width: 55%;
+}
+header nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav > ul li.main-menu {
+  position: relative;
+  line-height: 5;
+  flex: 1;
+}
+header nav > ul .sub-menu {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  font-size: 16px;
+  font-family: NotoSans-Light;
+  color: #555555;
+  z-index: 99;
+  display: none;
+  line-height: 1.5;
+}
+header nav > ul .sub-menu li {
+  padding: 10px 0;
+}
+header nav > ul .sub-menu li a:hover {
+  border-bottom: 1px solid #149f5c;
+  color: #149f5c;
+}
+header .gnb {
+  font-family: NotoSans-Light;
+  font-size: 15px;
+  color: #888;
+  width: 15%;
+  padding: 10px 40px 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .container {
+  width: 1024px;
+  margin: auto;
+  margin-top: 100px;
+}
+section.sect1 {
+  height: 100vh;
+  position: relative;
+  color: #fbfbfb;
+}
+section.sect1 .swiper p {
+  font-family: NotoSans-Bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 60px;
+}
+section.sect1 .swiper .swiper-slide.slide1 {
+  background-image: url(./images/bg1.png);
+}
+section.sect1 .swiper .swiper-slide.slide2 {
+  background-image: url(./images/bg2.png);
+}
+section.sect1 .swiper .swiper-slide.slide3 {
+  background-image: url(./images/bg3.png);
+}
+section.sect1 .swiper .swiper-slide.slide4 {
+  background-image: url(./images/bg4.png);
+}
+section.sect1 .swiper .swiper-slide.slide5 {
+  background-image: url(./images/bg5.jpg);
+}
+section.sect1 .swiper .swiper-slide.slide6 {
+  background-image: url(./images/bg6.jpg);
+}
+section.sect1 .swiper .swiper-slide.slide7 {
+  background-image: url(./images/bg7.jpg);
+}
+section.sect1 .slide-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+section.sect1 .slide-menu .paging-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+section.sect1 .slide-menu .paging-menu li {
+  width: 30px;
+  height: 30px;
+  color: transparent;
+  cursor: pointer;
+  background-image: url(./images/mainRoll_indi.png);
+}
+section.sect1 .slide-menu .paging-menu li.on {
+  background-image: url(./images/mainRoll_indi_on.png);
+}
+section.sect1 .slide-menu a.pause {
+  display: inline-block;
+  width: 9px;
+  height: 11px;
+  color: transparent;
+  background-image: url(./images/btn_pause.png);
+}
+section.sect1 .slide-menu a.pause.active {
+  background-image: url(./images/btn_play.png);
+}
+section.sect1 a.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+section.sect1 a.prev {
+  left: 10px;
+}
+section.sect1 a.next {
+  right: 10px;
+}
+section.sect2 {
+  height: 200vh;
+}
+section.sect2 .sticky-title {
+  text-align: center;
+  color: #919191;
+  position: sticky;
+  top: 0;
+  padding-top: 100px;
+  transition: 0.5s;
+}
+section.sect2 .sticky-title h2 {
+  font-family: Montserrat-Bold;
+  font-size: 240px;
+  letter-spacing: -8px;
+}
+section.sect2 .sticky-title p {
+  font-family: NotoSans-Light;
+  font-size: 24px;
+}
+section.sect2 .listDiv {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 40px;
+}
+section.sect2 .listDiv .list {
+  width: 492px;
+  height: 492px;
+  color: #fff;
+  width: 48%;
+  padding: 60px;
+}
+section.sect2 .listDiv .list .type {
+  font-family: NotoSans-Light;
+  font-size: 20px;
+}
+section.sect2 .listDiv .list .con {
+  font-family: NotoSans-Medium;
+  font-size: 20px;
+}
+section.sect2 .listDiv .list .con span {
+  font-family: Montserrat-Bold;
+  font-size: 120px;
+}
+section.sect2 .listDiv .list.list1 {
+  background-image: url(./images/mainCon_one_list_bg1.jpg);
+}
+section.sect2 .listDiv .list.list2 {
+  transform: translateY(15%);
+  background-image: url(./images/mainCon_one_list_bg2.jpg);
+}
+section.sect2 .listDiv .list.list3 {
+  background-image: url(./images/mainCon_one_list_bg3.jpg);
+}
+section.sect2 .listDiv .list.list4 {
+  transform: translateY(15%);
+  background-image: url(./images/mainCon_one_list_bg4.jpg);
+}
+section.sect3 {
+  height: 130vh;
+  position: relative;
+}
+section.sect3 .bgDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+section.sect3 .bgDiv #video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+section.sect3 .bgDiv .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(39, 145, 115, 0.9);
+}
+section.sect3 .sticky-title {
+  text-align: center;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  padding-top: 100px;
+  transition: 0.5s;
+}
+section.sect3 .sticky-title h2 {
+  font-family: Montserrat-Bold;
+  font-size: 240px;
+  letter-spacing: -8px;
+}
+section.sect3 .sticky-title p {
+  font-family: NotoSans-Light;
+  font-size: 24px;
+}
+section.sect3 .container .tab-content {
+  color: #333;
+  background-color: #fff;
+  position: relative;
+  height: 470px;
+}
+section.sect3 .container .tab-content article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  padding: 50px;
+  opacity: 0;
+}
+section.sect3 .container .tab-content article.on {
+  opacity: 1;
+  z-index: 10;
+}
+section.sect3 .container .tab-content article.on .product-img .img {
+  opacity: 1;
+  transform: translateY(0);
+}
+section.sect3 .container .tab-content article.on .btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+section.sect3 .container .tab-content article .product-summary {
+  height: 260px;
+}
+section.sect3 .container .tab-content article .product-summary .tit {
+  font-family: NotoSans-Thin;
+  line-height: 1;
+  font-size: 50px;
+}
+section.sect3 .container .tab-content article .product-summary .name {
+  font-family: NotoSans-Thin;
+  font-size: 80px;
+}
+section.sect3 .container .tab-content article .product-summary .txt {
+  font-family: NotoSans-Light;
+  font-size: 18px;
+  padding-top: 15px;
+  line-height: 1.5;
+}
+section.sect3 .container .tab-content article .btn {
+  font-size: 20px;
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(10px);
+}
+section.sect3 .container .tab-content article .btn a {
+  color: #fff;
+  background: rgb(20, 159, 92);
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+section.sect3 .container .tab-content article .product-img {
+  width: 520px;
+  height: 536px;
+  position: absolute;
+  right: -120px;
+  bottom: 0;
+  overflow: hidden;
+}
+section.sect3 .container .tab-content article .product-img .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(100px);
+}
+section.sect3 .container .tab-content article .product-img .img.img1 {
+  transition: 0.6s;
+}
+section.sect3 .container .tab-content article .product-img .img.img2 {
+  transition: 1s;
+}
+section.sect3 .menu-item {
+  margin-top: 35px;
+  width: 100%;
+}
+section.sect3 .menu-item .menu-line {
+  border-top: 1px solid #ffffff;
+  width: 100%;
+  position: relative;
+}
+section.sect3 .menu-item .menu-line .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #fff;
+  position: absolute;
+  top: -5px;
+}
+section.sect3 .menu-item .menu {
+  font-family: NotoSans-Light;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+  gap: 20px;
+  width: 1024px;
+  margin: auto;
+  padding: 20px;
+}
+section.sect3 .menu-item .menu li {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  z-index: 99;
+}
+section.sect3 .menu-item .menu li a {
+  opacity: 0.8;
+}
+section.sect3 .menu-item .menu li a.on {
+  font-family: NotoSans-Medium;
+  opacity: 1;
+}
+
+footer {
+  padding: 60px;
+  text-align: center;
+  color: #888;
+  font-family: NotoSans-Light;
+}
+footer .utill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  padding: 20px;
+}
+footer .utill li {
+  background: url(./images/dot4x4.png) no-repeat right center;
+  padding-right: 15px;
+}
+footer .utill .u-d {
+  color: #333;
+  background: url(./images/footer_familyD_open.gif) no-repeat right 15px center;
+  padding: 5px 70px 5px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 50px;
+  background-color: #fff;
+}
+footer .info {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+footer .info li span {
+  border-left: 1px solid #c1c1c1;
+  padding-left: 10px;
+}
+footer .copyright {
+  font-size: 14px;
+  color: #bbb;
+  padding: 15px;
+}
+footer .isms {
+  padding: 15px;
+  text-align: left;
+  font-size: 14px;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+footer .isms img {
+  width: 100px;
+}

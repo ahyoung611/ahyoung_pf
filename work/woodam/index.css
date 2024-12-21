@@ -1,0 +1,389 @@
+@import url(../reset.css);
+@font-face {
+  font-family: notokr-medium;
+  src: url(./font/notokr-medium.woff);
+}
+@font-face {
+  font-family: notokr-regular;
+  src: url(./font/notokr-regular.woff);
+}
+@font-face {
+  font-family: notokr-light;
+  src: url(./font/notokr-light.woff);
+}
+body {
+  font-family: notokr-regular;
+}
+body .flex {
+  display: flex;
+}
+body .align-c {
+  align-items: center;
+}
+body .just-c {
+  justify-items: center;
+}
+body .just-sb {
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  height: 110px;
+  background-color: #fff;
+  gap: 50px;
+  padding-left: 50px;
+  text-align: center;
+  z-index: 99;
+}
+header h1 {
+  width: 180px;
+}
+header h1 img {
+  width: 100%;
+}
+header nav {
+  width: 38%;
+}
+header nav a {
+  display: block;
+}
+header nav li.main-menu {
+  position: relative;
+  flex: 1;
+  height: 110px;
+}
+header nav li.main-menu > a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+header nav li.main-menu ul.sub-menu {
+  display: none;
+  border-top: 5px solid #f47a20;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  text-align: left;
+  z-index: 99;
+}
+header nav li.main-menu ul.sub-menu li:hover a {
+  color: #f47a20;
+}
+header nav li.main-menu ul.sub-menu a {
+  padding: 10px;
+  font-size: 13px;
+  color: #848484;
+  border-bottom: 1px solid rgba(132, 132, 132, 0.5);
+  margin: 0 5px;
+}
+
+p {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: notokr-regular;
+}
+
+section p {
+  opacity: 0.7;
+}
+section.sect1 {
+  height: 100vh;
+  background-image: url(./images/bg_visual.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+section.sect1 .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+}
+section.sect1 .title .i-title {
+  font-size: 20px;
+  opacity: 0.5;
+  letter-spacing: 0.4em;
+  padding-bottom: 20px;
+}
+section.sect1 .title .sub-title h3 {
+  font-size: 50px;
+  letter-spacing: 0.5em;
+}
+section.sect1 .title .sub-title b {
+  font-size: 56px;
+}
+section.sect1 .title .sub-title b span {
+  color: #f47a20;
+  border-bottom: 1px solid #f47a20;
+}
+section.sect2 {
+  height: 100vh;
+  position: relative;
+}
+section.sect2 .menu {
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 50;
+}
+section.sect2 .menu a.home {
+  height: 100px;
+  display: block;
+  background-color: #f47a20;
+}
+section.sect2 .menu ul li {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+section.sect2 .menu ul li a {
+  color: #fff;
+  opacity: 0.7;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+section.sect2 .menu ul li.on a {
+  color: #f47a20;
+}
+section.sect2 .detail {
+  width: 30%;
+  position: absolute;
+  top: 18%;
+  left: 15%;
+  color: #fff;
+  z-index: 50;
+  line-height: 23px;
+}
+section.sect2 .detail h3 {
+  letter-spacing: 0.04em;
+}
+section.sect2 .detail h3.t-detail {
+  font-size: 28px;
+}
+section.sect2 .detail h3.m-detail {
+  font-size: 30px;
+  padding: 45px 0;
+}
+section.sect3 {
+  height: 530px;
+  width: 100%;
+}
+section.sect3 h2 {
+  font-size: 40px;
+  line-height: 1.5;
+}
+section.sect3 .col1 {
+  width: 35%;
+  height: 100%;
+  background-image: url(./images/bg_bnr_1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+}
+section.sect3 .col1 h2 {
+  padding-bottom: 30px;
+}
+section.sect3 .col1 .detail {
+  padding: 20px;
+  margin: 70px 20px;
+}
+section.sect3 .col1 span {
+  border-top: 2px solid #fff;
+  padding-top: 10px;
+}
+section.sect3 .col1 img {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  z-index: 50;
+}
+section.sect3 .col2 {
+  width: 65%;
+  height: 100%;
+  background-image: url(./images/bg_bnr_2.jpg);
+  background-position: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+section.sect3 .col2 span {
+  font-size: 45px;
+}
+section.sect3 .col2 ul {
+  display: flex;
+  gap: 10px;
+}
+section.sect3 .col2 ul li {
+  border: 1px solid #fff;
+  padding: 10px;
+  font-size: 14px;
+  opacity: 0.7;
+  letter-spacing: 0.02em;
+}
+
+.board {
+  background-color: #fff;
+  width: 100%;
+}
+.board > div {
+  width: 50%;
+}
+.board .left {
+  border-right: 1px solid #e1e1e1;
+}
+.board .title {
+  width: 30%;
+  padding-left: 50px;
+}
+.board .title img {
+  width: 70px;
+}
+.board .title h2 {
+  font-size: 16px;
+  padding-right: 20px;
+  border-right: 1px solid #e1e1e1;
+}
+.board .list {
+  font-size: 14px;
+  color: #888888;
+}
+.board .list ul {
+  height: 40px;
+  overflow: hidden;
+}
+.board .list ul li {
+  padding: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 340px;
+  font-family: notokr-regular;
+}
+footer .col1 {
+  width: 80%;
+  padding-left: 50px;
+}
+footer .col1 .csCenter {
+  width: 15%;
+  border-right: 1px solid #e1e1e1;
+}
+footer .col1 .csCenter .cs .woodam-cs span {
+  display: inline-block;
+  font-size: 18px;
+  color: #6c6c6c;
+  padding-bottom: 5px;
+}
+footer .col1 .csCenter .cs .woodam-cs b {
+  font-size: 22px;
+}
+footer .col1 .csCenter .cs .tel {
+  padding-top: 20px;
+  font-size: 22px;
+}
+footer .col1 .csCenter .cs .tel b {
+  font-size: 34px;
+}
+footer .col1 .csCenter .cs .email {
+  color: #6c6c6c;
+  padding: 10px 0;
+  font-size: 14px;
+}
+footer .col1 .csCenter .btn_links {
+  text-align: center;
+  gap: 5px;
+}
+footer .col1 .csCenter .btn_links li {
+  width: 30px;
+  height: 30px;
+  background-color: #343235;
+  border-radius: 50%;
+}
+footer .col1 .copyright {
+  padding-left: 40px;
+}
+footer .col1 .copyright li {
+  padding: 0 15px;
+}
+footer .col1 .copyright ul {
+  display: flex;
+  line-height: 1.5;
+}
+footer .col1 .copyright ul.woodam {
+  padding-bottom: 10px;
+  align-items: center;
+}
+footer .col1 .copyright ul.woodam li {
+  font-size: 20px;
+}
+footer .col1 .copyright ul.woodam .leader {
+  font-size: 14px;
+  color: #6c6c6c;
+}
+footer .col1 .copyright ul.woodam .leader b {
+  color: #000;
+}
+footer .col1 .copyright ul.woodam .leader.line {
+  border-right: 1px solid #e1e1e1;
+}
+footer .col1 .copyright ul.locate {
+  padding-top: 30px;
+}
+footer .col1 .copyright ul.locate li {
+  font-size: 14px;
+  color: #6c6c6c;
+}
+footer .col1 .copyright ul.locate li b {
+  color: #000;
+  display: inline-block;
+  width: 80px;
+  border-right: 1px solid #e1e1e1;
+}
+footer .col2 {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+footer .col2 .portFolio {
+  width: 220px;
+  height: 220px;
+  background: url(./images/bg_pf.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+footer .col2 .portFolio .subject {
+  display: inline-block;
+  color: #626262;
+  font-size: 12px;
+  border: 1px solid #3d3d3d;
+  padding: 0 10px;
+  margin-top: 30px;
+}
+footer .col2 .portFolio .title {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}

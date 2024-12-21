@@ -1,0 +1,621 @@
+/* 어그로체 */
+@font-face {
+    font-family: 'SBAggroL';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '양진체';
+    src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'SBAggroL';
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* .item {
+    border: 1px solid #000;
+} */
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    perspective: 900px;
+}
+
+body {
+    background-color: #000;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* menu-icon */
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 99;
+    padding: 10px;
+    animation: icon-Ani 1s infinite linear alternate;
+}
+
+@keyframes icon-Ani {
+    0% {
+        transform: scale(1);
+        background: #000;
+    }
+
+    100% {
+        transform: scale(.8);
+        background: #061D38;
+    }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar1.on {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.bar2.on {
+    opacity: 0;
+}
+
+.bar3.on {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+body.bg0 {
+    background: #000;
+}
+
+body.bg1 {
+    background: #151cc4;
+}
+
+body.bg2 {
+    background: #fff;
+}
+
+/* header */
+header {
+    font-family: '양진체';
+    background-image: linear-gradient(rgb(15, 17, 41), rgb(15, 17, 41));
+    color: #fff;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    transform: rotateY(100deg);
+    transform-origin: left center;
+    transition: .35s;
+    opacity: 0;
+    z-index: 99;
+}
+
+header.on {
+    transform: rotateY(15deg);
+    opacity: 1;
+}
+
+h1 {
+    margin: 70px 0 40px 0;
+
+}
+
+h1 img {
+    width: 8cqw;
+}
+
+h2 img {
+    width: 6cqw;
+}
+
+
+p.intro {
+    font-size: 20px;
+    padding: 10px;
+    line-height: 2;
+}
+
+header ul.menu {
+    position: absolute;
+    width: 90%;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header ul.menu li {
+    margin: 10px;
+}
+
+header ul.menu li a {
+    display: block;
+    border: 2px solid #1be5de;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+header ul.menu li.on a {
+    border: 2px solid #f1129f;
+    background: #f1129f;
+    color: #fff;
+}
+
+
+/* section */
+/* 공통속성 */
+section {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    transform-origin: right center;
+    transition: .35s;
+}
+
+section.on {
+    transform: rotateY(-5deg);
+}
+
+article {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    gap: 4px;
+    position: absolute;
+    opacity: 0;
+    perspective: 900px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to bottom, #1be5de 20%, #ddd 40% 60%, #f1129f 80%);
+    border-image-slice: 1;
+}
+
+article>div {
+    transform: rotateY(180deg);
+    transition: .5s;
+}
+
+article.on {
+    opacity: 1;
+    z-index: 99;
+}
+
+article.on>div {
+    transform: rotateY(0);
+}
+
+
+.item {
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.li-g {
+    border: 3px solid #1be5de;
+    border-radius: 30px;
+}
+
+
+/* art1 공백 */
+.art1 .col {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    line-height: 2;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.art1 .item:hover .col {
+    opacity: 1;
+    transition: .35s;
+}
+
+/* art1 */
+/* grid */
+.art1 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* 열값 */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    /* 행값 */
+    /* column-gap: 12px;
+    row-gap: 12px; */
+}
+
+.art1 .item1 {
+    grid-column: 1/span 5;
+    background-image: url(./images/지구오락실2.jpg);
+    grid-row: 1/1;
+}
+
+.art1 .item2 {
+    grid-column: 1/span 1;
+    grid-row: 2/span 2;
+    overflow: hidden;
+    background-image: url(./images/1-토롱3.jpg);
+}
+
+.art1 .item2 .col {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    line-height: 2;
+    font-size: 20px;
+}
+
+.art1 .item2:hover .col {
+    opacity: 1;
+    transition: .35s;
+}
+
+
+.art1 .item3 {
+    background-image: url(./images/1-이은지1.jpg);
+}
+
+.art1 .item3 .col {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    line-height: 2;
+    font-size: 20px;
+}
+
+.art1 .item3:hover .col {
+    opacity: 1;
+    transition: .35s;
+}
+
+.art1 .item4 {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.art1 .item5 {
+    background-image: url(./images/1-이영지4.jpg);
+}
+
+.art1 .item6 {
+    background-image: url(./images/1-우주.gif);
+}
+
+.art1 .item7 {
+    background-image: url(./images/1-눈.gif);
+}
+
+.art1 .item8 {
+    background-image: url(./images/1-김미미2.jpg);
+}
+
+.art1 .item9 {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+}
+
+
+.art1 .item10 {
+    background-image: url(./images/1-안유진5.jpg);
+}
+
+/* art2 */
+.art2 {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    background-image: url(./images/지구오락실-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.art2 .item1 {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+}
+
+.art2 .item2 {
+    grid-column: 3/span 5;
+    grid-row: 1/span 2;
+    background-image: url(./images/2-타이틀.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.art2 .item3 {
+    grid-column: 8/span 2;
+    grid-row: 1/span 2;
+}
+
+.art2 .item4 {
+    grid-column: 1;
+    grid-row: 3/span 8;
+}
+
+.art2 .item5 {
+    grid-column: 2/span 4;
+    grid-row: 3/span 5;
+    width: 100%;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+}
+
+.art2 .item6 {
+    grid-column: 6/span 3;
+    grid-row: 3/span 4;
+    background-image: url(./images/게임스타트.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.art2 .item6:hover {
+    background-image: url(./images/미미현타.gif);
+}
+
+.art2 .item7 {
+    grid-column: 9;
+    grid-row: 3/span 8;
+}
+
+.art2 .item8 {
+    grid-column: 2/span 2;
+    grid-row: 8/span 3;
+    background-image: url(./images/액션딸기.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.art2 .item8:hover {
+    background-image: url(./images/딸기게임\ 영지.gif);
+}
+
+.art2 .item9 {
+    grid-column: 4/span 2;
+    grid-row: 8/span 3;
+    background-image: url(./images/레트로음악퀴즈.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.art2 .item9:hover {
+    background-image: url(./images/센터본능\ 유진.gif);
+}
+
+.art2 .item10 {
+    grid-column: 6/span 3;
+    grid-row: 7/span 4;
+    background-image: url(./images/보너스스테이지.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.art2 .item10:hover {
+    background-image: url(./images/뽀너스.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.art2 .item11 {
+    grid-column: 1/span 9;
+    grid-row: 11/span 1;
+}
+
+/* art3 */
+.art3 {
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+
+.art3 .item1 {
+    cursor:default;
+    grid-column: 1/span 5;
+    grid-row: 1/span 10;
+    background-image: url(./images/3토롱굿즈-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.art3 .item{
+    overflow: hidden;
+}
+
+
+.art3 .item2 {
+    grid-column: 6/span 2;
+    grid-row: 1/span 3;
+    background-image: url(./images/하얀티1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.art3 .item:hover .desc{
+    bottom: 0;
+ 
+}
+
+.art3 .item .desc{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100px;
+    z-index: 99;
+    transition: .5s;
+    text-align: center;
+}
+
+.art3 h2{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.art3 p{
+    font-size: 14px;
+    padding-top: 2px;
+}
+
+.art3 .item3 {
+    grid-column: 8/span 2;
+    grid-row: 1/span 3;
+    background-image: url(./images/검정티2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.art3 .item4 {
+    grid-column: 10/span 2;
+    grid-row: 1/span 3;
+    background-image: url(./images/인형자켓.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.art3 .item5 {
+    grid-column: 6/span 2;
+    grid-row: 4/span 3;
+    background-image: url(./images/안대.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.art3 .item6 {
+    grid-column: 8/span 2;
+    grid-row: 4/span 3;
+    background-image: url(./images/토롱이쿠션.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.art3 .item7 {
+    grid-column: 10/span 2;
+    grid-row: 4/span 3;
+    background-image: url(./images/양말.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.art3 .item8 {
+    grid-column: 6/span 2;
+    grid-row: 7/span 3;
+    background-image: url(./images/토롱그립톡.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.art3 .item9 {
+    grid-column: 8/span 2;
+    grid-row: 7/span 3;
+    background-image: url(./images/토롱이키링.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.art3 .item10 {
+    grid-column: 10/span 2;
+    grid-row: 7/span 3;
+    background-image: url(./images/토롱이파우치.png);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

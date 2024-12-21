@@ -1,0 +1,194 @@
+@import url(../reset.css);
+
+@font-face {
+    font-family: NotoSansCJKkr-Light;
+    src: url(./font/NotoSansCJKkr-Light.woff);
+}
+
+@font-face {
+    font-family: 'YEONGJUSeonbiTTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/YEONGJUSeonbiTTF.woff2')
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    background-color: #000;
+
+    h1 {
+        height: 180px;
+        padding: 20px;
+
+        img {
+            height: 100%;
+        }
+    }
+}
+
+.wrap {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+    &>div {
+        width: 50%;
+    }
+
+    .v-slide-container {
+        height: 100vh;
+        overflow: hidden;
+        background-color: #000;
+        color: #fff;
+
+        .vslide-wrap {
+            height: 100%;
+            position: relative;
+            top: -100%;
+
+
+            .vslide {
+                position: relative;
+                height: 100%;
+
+                .tab-content {
+
+                    .tab {
+
+                        li {
+                            width: 100%;
+                            // height: 100%;
+                            position: absolute;
+                            top: 33%;
+                            left: 3%;
+                            display: none;
+                            // border: 1px solid #f00;
+
+                            &:first-child {
+                                display: block;
+                            }
+
+                            h2 {
+                                font-family: 'YEONGJUSeonbiTTF';
+                                font-size: 35px;
+                            }
+
+                            p {
+                                font-family: NotoSansCJKkr-Light;
+                                font-size: 18px;
+                                padding: 10px 0;
+                                line-height: 1.5;
+                                opacity: .5;
+                            }
+                        }
+                    }
+                }
+
+                .tab-menu {
+                    width: 100%;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translateX(-50%);
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+
+                    li {
+                        height: 250px;
+                        position: relative;
+                        border: 3px solid #fff;
+
+                        a {
+                            &::after {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                content: '';
+                                width: 100%;
+                                height: 100%;
+                                background-color: #000;
+                                opacity: .5;
+
+
+                            }
+
+                            &.on::after {
+                                opacity: 0;
+                            }
+
+                        }
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .h-slide-container {
+        height: 100vh;
+        overflow: hidden;
+        z-index: 99;
+
+        .hslide-wrap {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            position: relative;
+            left: -100%;
+
+
+            .hslide {
+                min-width: 100%;
+                height: 100%;
+                background-size: cover;
+                opacity: 1;
+                transition: .7s;
+
+                &.hslide1 {
+                    background-image: url(./images/rush1.png);
+                }
+
+                &.hslide2 {
+                    background-image: url(./images/spray1.png);
+                }
+
+                &.hslide3 {
+                    background-image: url(./images/gel1.png);
+                }
+            }
+        }
+
+    }
+
+    button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        width: 120px;
+
+        img {
+            width: 100%;
+        }
+
+        &.prev {
+            position: absolute;
+            left: 5%;
+            bottom: 120px;
+        }
+
+        &.next {
+            position: absolute;
+            right: 55%;
+            bottom: 120px;
+        }
+    }
+}
