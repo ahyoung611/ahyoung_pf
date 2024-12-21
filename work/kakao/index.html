@@ -7,6 +7,7 @@
     <title>kakao</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -26,19 +27,19 @@
 
     <div class="container wrap flex">
         <main class="flex">
-            
+
             <div class="kakaotlak y"></div>
             <div class="open x"></div>
             <div class="story x"></div>
             <div class="shopping y"></div>
             <div class="kakao y wid2"></div>
-            
+
             <div class="bank y"></div>
             <div class="map x"></div>
             <div class="kakaot x"></div>
             <div class="customer y wid2"></div>
             <div class="work y"></div>
-            
+
         </main>
 
         <aside>
@@ -48,11 +49,11 @@
                         <input type="text" id="txt ID" placeholder="아이디 입력">
                         <input type="password" id="pwd" placeholder="비밀번호 입력">
                     </div>
-                    <div class="btn"> 
+                    <div class="btn">
                         <input type="submit" value="로그인">
                     </div>
                 </div>
-                
+
                 <div class="gnb flex">
                     <ul class="flex ga">
                         <li>
@@ -80,52 +81,72 @@
                 <p>100.411.22.87</p>
             </div>
 
-
-
-            <div class="slide">
-                <img src="./images/1.jpg" alt="arrow">
-                <ul class="arrow flex">
-                    <li></li>
-                    <li></li>
-                </ul>
+            <div class="swiper kakaoSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/kakao-slide1.jpg" alt="slide1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/kakao-slide2.jpg" alt="slide2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/kakao-slide3.jpg" alt="slide3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/kakao-slide4.png" alt="slide4">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </aside>
     </div>
 
     <footer>
-       <div class="container flex">
-        <figure class="flex"><img class="footer-logo" src="./images/footer logo.png" alt="f-logo"></figure>
-        <div class="footer-menu">
-            <ul class="flex">
-                <li><a href="#">회사소개</a></li>
-                <li>|</li>
-                <li><a href="#">이용약관</a></li>
-                <li>|</li>
-                <li><a href="#">개인정보처리방침</a></li>
-                <li>|</li>
-                <li><a href="#">운영정책</a></li>
-                <li>|</li>
-                <li><a href="#">청소년보호정책</a></li>
-                <li>|</li>
-                <li><a href="#">권리침해신고안내</a></li>
-                <li>|</li>
-                <li><a href="#">공지사항</a></li>
-            </ul>
-            <div class="adress flex"> 
-                <div class="sub-adress">
-                    <p >제주특별자치도 제주시 첨단로 242 (우)63309 카카오 본사</p>
-                    <p class="copy">Copyright © Kakao Corp. All rights reserved.</p>
+        <div class="container flex">
+            <figure class="flex"><img class="footer-logo" src="./images/footer logo.png" alt="f-logo"></figure>
+            <div class="footer-menu">
+                <ul class="flex">
+                    <li><a href="#">회사소개</a></li>
+                    <li>|</li>
+                    <li><a href="#">이용약관</a></li>
+                    <li>|</li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li>|</li>
+                    <li><a href="#">운영정책</a></li>
+                    <li>|</li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li>|</li>
+                    <li><a href="#">권리침해신고안내</a></li>
+                    <li>|</li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+                <div class="adress flex">
+                    <div class="sub-adress">
+                        <p>제주특별자치도 제주시 첨단로 242 (우)63309 카카오 본사</p>
+                        <p class="copy">Copyright © Kakao Corp. All rights reserved.</p>
+                    </div>
+                    <div class="relation-site flex">
+                        <p href="" class="site">카카오 서비스</p>
+                        <button><a href="#">이동</a></button>
+                    </div>
                 </div>
-                <div class="relation-site flex">
-                    <p  href="" class="site">카카오 서비스</p>
-                    <button><a href="#">이동</a></button>
-                </div>
-            </div>
 
+            </div>
         </div>
-       </div >
-    
+
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".kakaoSwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>

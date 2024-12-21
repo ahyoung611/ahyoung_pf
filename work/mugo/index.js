@@ -7,7 +7,7 @@ $('.main-menu').mouseleave(function () {
     $(this).find('ul.sub-menu').stop().slideUp()
 })
 
-// //a태그에 위치값을 지정해주었다.
+//a태그에 위치값을 지정해주었다.
 // $('.friend li a').click(function (e) {
 //     e.preventDefault()
 
@@ -21,11 +21,10 @@ $('.main-menu').mouseleave(function () {
 //     //해당 위치값을 보여라
 //     $(href).addClass('on')
 
-
 // })
 
 const aElems = document.querySelectorAll('.friend li a')
-console.log(aElems)
+
 aElems.forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault()

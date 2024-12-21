@@ -17,8 +17,6 @@ header {
     margin: auto;
 }
 
-
-
 .container h1 img {
     width: 60%;
 }
@@ -40,8 +38,6 @@ header .container {
 nav {
     align-self: flex-end;
 }
-
-/* nav{position: relative; top: 15px;} */
 
 nav ul {
     gap: 110px;
@@ -156,11 +152,6 @@ div.work {
     background-image: url(./images/work.jpg);
 }
 
-
-/* input[type="text"]{ padding: 10px;}
-input[type="password"]{ padding: 10px;} */
-
-
 /* aside */
 aside {
     width: 470px;
@@ -169,13 +160,12 @@ aside {
 .input-text input {
     border: 1PX solid #eeeeee;
     display: block;
-    margin-right: 0;
     font-size: 15px;
-    width: 340px;
+    width: 300px;
     height: 48px;
     padding: 14px 25px;
     text-align: left;
-
+    margin-top: -1px;
 }
 
 .sor {
@@ -184,32 +174,32 @@ aside {
 }
 
 .btn input {
-    padding: 39.5px 37px;
+    height: calc(78px * 2);
+    padding: 37px;
     background-color: #ffcf22;
     border: none;
     font-size: 15px;
     color: #fff;
+    cursor: pointer;
 }
 
-
 .gnb {
-
     gap: 20px;
     font-size: 12px;
     justify-content: space-between;
     margin: 10px 0 20px 0;
-
 }
-
 
 .gnb .ga {
     gap: 10px;
-
-
 }
 
 .gnb .info {
     gap: 5px;
+}
+
+.gnb .info li:nth-child(odd) {
+    cursor: pointer;
 }
 
 .login-ip img {
@@ -225,28 +215,40 @@ aside {
     gap: 15px;
 }
 
-
-.slide {
+.swiper {
     position: relative;
+    width: 100%;
+    height: 595px;
+    overflow: hidden;
 }
 
-.slide ul.arrow {
-    position: absolute;
-    right: 0;
-    top: 0;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.slide ul.arrow li {
-    width: 66px;
-    height: 66px;
-    background-image: url(./images/btn_rolling_arrow1.png);
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.slide ul.arrow li:nth-child(2) {
-    background-position-x: -66px;
+.kakaoSwiper .swiper-button-next {
+    color: #ffffff;
+    right: 15px;
+    top: 40px;
 }
 
-
+.kakaoSwiper .swiper-button-prev {
+    color: #ffffff;
+    left: 80%;
+    top: 40px;
+}
 
 
 /* footer */
@@ -257,7 +259,6 @@ footer {
 
 footer .container {
     border-top: 2px solid #eeeeee;
-
     height: 190px;
 }
 
