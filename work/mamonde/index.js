@@ -52,60 +52,15 @@ sections.forEach((sect, i) => {
 window.addEventListener('scroll', function () {
     //document에 세로 위치값 구하기
     let scrollTop = document.documentElement.scrollTop
-    // 열린 창의 높이값 가져오기
-    // let winHeight = window.innerHeight
 
-    // for (const li of listElems) {
-    //     li.classList.remove('on')
-    // }
-    // for (const sec of sections) {
-    //     sec.classList.remove('on')
-    // }
-
-    //첫번째 방법 if
-    // if(scrollTop>=0 && scrollTop<winHeight){
-    //     listElems[0].classList.add('on')
-    //     sections[0].classList.add('on')
-    // }
-
-    // if(scrollTop>=winHeight && scrollTop<winHeight*2){
-    //     listElems[1].classList.add('on')
-    //     sections[1].classList.add('on')
-    // }
-
-    // if(scrollTop>=winHeight *2 && scrollTop<winHeight*3){
-    //     listElems[2].classList.add('on')
-    //     sections[2].classList.add('on')
-    // }
-
-    // if(scrollTop>=winHeight *3 && scrollTop<winHeight*4){
-    //     listElems[3].classList.add('on')
-    //     sections[3].classList.add('on')
-    // }
-
-    // if(scrollTop>=winHeight * 4){
-    //     listElems[4].classList.add('on')
-    //     sections[4].classList.add('on')
-    // }
-
-    //두번째 방법 for문
-    // for (let i = 0; i < sections.length; i++) {
-    //     if (scrollTop >= winHeight * i && scrollTop < winHeight *(i+1)) {
-    //         listElems[i].classList.add('on')
-    //         sections[i].classList.add('on')
-    //     }
-    // }
-
-    //세번째 방법 foreach방법
-    
     sections.forEach((section, i) => {
         let sectionTop = section.offsetTop
         //조건값이 참인 section의 index를 찾아라
         if (scrollTop >= sectionTop - 100) {
 
-            for (const li of listElems) {li.classList.remove('on')}
-            for (const sec of sections) {sec.classList.remove('on')}
-            
+            for (const li of listElems) { li.classList.remove('on') }
+            for (const sec of sections) { sec.classList.remove('on') }
+
             listElems[i].classList.add('on')
             sections[i].classList.add('on')
         }
@@ -118,8 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 각 섹션의 색상 데이터를 저장
     const sectionColors = {
-        'sect1': 'rgba(255,255,255,0)', 
-        'sect2': 'rgba(249, 218, 237,.8)', 
+        'sect1': 'rgba(255,255,255,0)',
+        'sect2': 'rgba(249, 218, 237,.8)',
         'sect3': 'rgba(255,255,255,.8)',
         'sect4': 'rgba(207, 236, 179,.8)',
         'sect5': 'rgba(255,255,255,0)'

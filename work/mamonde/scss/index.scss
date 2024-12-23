@@ -179,19 +179,22 @@ section {
             }
         }
 
-        .icon {
-            width: 80px;
-            height: 80px;
-            animation: icon-rotate 5s linear infinite;
-            transform-origin: 50% 50%;
 
-            img {
-                width: 100%;
-            }
-        }
 
         .art1 {
             position: relative;
+
+            .icon {
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                animation: icon-rotate 5s linear infinite;
+                transform-origin: 50% 50%;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
 
         .desc {
@@ -209,7 +212,8 @@ section {
         .art2 {
             video {
                 width: 100%;
-                margin-top: -100px;
+                height: 100%;
+                object-fit: cover;
             }
         }
 
@@ -218,17 +222,15 @@ section {
 
     &.sect2 {
         .icon {
-            position: absolute;
-            left: 150px;
-            top: -100px;
+            left: 10%;
+            top: -30%;
         }
     }
 
     &.sect4 {
         .icon {
-            position: absolute;
-            left: 700px;
-            top: 320px;
+            right: 10%;
+            bottom: -50%;
         }
     }
 
@@ -257,7 +259,7 @@ section {
                 display: inline-block;
                 animation: icon-rotate 5s linear infinite;
                 transform-origin: 50% 50%;
-    
+
                 img {
                     width: 100%;
                 }
@@ -274,7 +276,7 @@ section {
 
     &.sect5 {
         overflow: hidden;
-        background-color: rgba(207, 236, 179,.5);
+        background-color: rgba(207, 236, 179, .5);
 
         ul {
             width: 100%;
@@ -334,6 +336,7 @@ section {
     }
 }
 
+
 @media screen and (max-width:800px) {
     header {
         .menu-icon {
@@ -349,513 +352,8 @@ section {
         h2 {
             font-size: 7vw;
         }
-
-        h3{
-            font-size: 5vw;
-        }
-
-        p {
-
-            font-size: 3vw;
-        }
-
-        &.sect1 {
-            background-image: url(./images/brand_story_mo-bg.jpg);
-
-            h2 {
-                font-size: 8vw;
-            }
-
-            p {
-
-                font-size: 4vw;
-            }
-        }
-
-        &.sect2,
-        &.sect4{
-
-            &>article {
-                width: 100%;
-                height: 50vh;
-                overflow: hidden;
-            }
-        }
-
-        &.sect3{
-
-            &.on {
-                opacity: 1;
-    
-                .desc {
-                    opacity: 1;
-                    top: 48%;
-                }
-            }
-
-            .video {
-                width: 95%;
-                top: 15%;
-                left: 50%;
-                transform: translateX(-50%);
-    
-            }
-    
-            .desc {
-                width: 100%;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 80%;
-    
-                .icon {
-                    width: 35px;
-                }
-    
-                .item {
-                    width: 300px;
-                    height: 300px;
-                }
-            }
-        }
-
-        &.sect5{
-            li{
-                &:hover {
-                    flex: 10;}
-            }
-        }
-    }
-}
-
-@media screen and (min-width:801px) {
-
-    header {
-        nav {
-            display: block;
-        }
-    }
-
-    section {
-        &.sect1 {
-            background: url(./images/brand_story_bg.jpg);
-
-            h2 {
-                font-size: 5vw;
-            }
-
-            p {
-
-                font-size: 2vw;
-            }
-        }
-
-        &.sect2,
-        &.sect4{
-            display: flex;
-
-            &>article {
-                width: 50%;
-                overflow: hidden;
-            }
-        }
-
-        &.sect3{
-
-            &.on {
-                opacity: 1;
-    
-                .desc {
-                    opacity: 1;
-                    top: 25%;
-                }
-            }
-
-            .video {
-                width: 58%;
-                top: 27%;
-                left: 2%;
-    
-                video {
-                    width: 100%;
-                }
-            }
-    
-            .desc {
-                right: 7%;
-                top: 50%;
-    
-                .icon {
-                    width: 60px;
-                }
-    
-                .item {
-                    width: 400px;
-                    height: 350px;
-                }
-            }
-        }
-
-        &.sect5{
-            li{
-                &:hover {
-                    flex: 4;}
-            }
-        }
-
-    }
-@import url(/reset.css);
-
-@font-face {
-    font-family: Pretendard-Regular;
-    src: url(./font/Pretendard-Regular.subset.woff2);
-}
-
-@font-face {
-    font-family: Pretendard-Medium;
-    src: url(./font/Pretendard-Medium.subset.woff2);
-}
-
-@font-face {
-    font-family: Pretendard-SemiBold;
-    src: url(./font/Pretendard-SemiBold.subset.woff2);
-}
-
-@mixin background {
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-}
-
-@mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-header {
-    @include flex-center;
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    font-family: Pretendard-Medium;
-    z-index: 99;
-
-    .menu-icon {
-        display: none;
-        cursor: pointer;
-        padding: 10px;
-
-        .bar1,
-        .bar2,
-        .bar3 {
-            width: 30px;
-            height: 3px;
-            background-color: rgb(0, 0, 0);
-            margin: 6px 0;
-            transition: 0.4s;
-        }
-    }
-
-    h1 {
-        width: 80px;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    nav {
-        display: none;
-        width: 90%;
-        font-size: 18px;
-
-
-        ul {
-            @include flex-center;
-            gap: 10px;
-
-            li {
-                padding: 20px;
-                position: relative;
-
-                &::after {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    background-color: #fccc00;
-                    width: 100%;
-                    height: 3px;
-                    transition: .3s;
-                    opacity: 0;
-                }
-
-                &.on::after {
-                    opacity: 1;
-                }
-
-                a {
-                    position: relative;
-                }
-
-                &.on a::after {
-                    width: 100%;
-                }
-
-            }
-        }
-    }
-}
-
-section {
-    font-family: Pretendard-Regular;
-    max-width: 100%;
-    height: 100vh;
-
-    h2 {
-        font-family: Pretendard-SemiBold;
-        font-size: 60px;
-        line-height: 1.5;
-    }
-
-    h3 {
-        font-size: 40px;
-    }
-
-    p {
-        font-size: 20px;
-        line-height: 1.5;
-    }
-
-    @keyframes icon-rotate {
-        100% {
-            transform: rotate(360deg);
-        }
-
-    }
-
-
-    &.sect1 {
-        @include background;
-        position: relative;
-        font-family: Pretendard-SemiBold;
-        transition: .3s;
-        opacity: 0;
-
-        &.on {
-            opacity: 1;
-
-            .desc {
-                opacity: 1;
-                bottom: 80px;
-            }
-        }
-
-        .desc {
-            width: 100%;
-            text-align: center;
-            color: #fff;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: -100px;
-            line-height: 1.5;
-            transition: 1s;
-            opacity: 0;
-        }
-    }
-
-    &.sect2,
-    &.sect4 {
-        transition: .3s;
-        opacity: 0;
 
         h3 {
-            padding-bottom: 30px;
-        }
-
-        &.on {
-            opacity: 1;
-
-            .desc {
-                opacity: 1;
-                top: 50%;
-            }
-        }
-
-        .icon {
-            width: 80px;
-            height: 80px;
-            animation: icon-rotate 5s linear infinite;
-            transform-origin: 50% 50%;
-
-            img {
-                width: 100%;
-            }
-        }
-
-        .art1 {
-            position: relative;
-        }
-
-        .desc {
-            text-align: center;
-            width: 100%;
-            position: absolute;
-            left: 50%;
-            top: 70%;
-            transform: translate(-50%, -50%);
-            transition: 1s;
-            opacity: 0;
-            color: rgba(0, 0, 0, .9);
-        }
-
-        .art2 {
-            video {
-                width: 100%;
-                margin-top: -100px;
-            }
-        }
-
-
-    }
-
-    &.sect2 {
-        .icon {
-            position: absolute;
-            left: 150px;
-            top: -100px;
-        }
-    }
-
-    &.sect4 {
-        .icon {
-            position: absolute;
-            left: 700px;
-            top: 320px;
-        }
-    }
-
-    &.sect3 {
-        position: relative;
-        background-color: #000;
-
-        .video {
-            position: absolute;
-
-            video {
-                width: 100%;
-            }
-        }
-
-        .desc {
-            @include flex-center();
-            flex-direction: column;
-            text-align: center;
-            position: absolute;
-            color: #fff;
-            opacity: 0;
-            transition: 1s;
-
-            .icon {
-                display: inline-block;
-                animation: icon-rotate 5s linear infinite;
-                transform-origin: 50% 50%;
-    
-                img {
-                    width: 100%;
-                }
-            }
-
-            .item {
-                background-image: url(./images/mamonde-item.png);
-                @include background();
-            }
-        }
-
-
-    }
-
-    &.sect5 {
-        overflow: hidden;
-        background-color: rgba(207, 236, 179,.5);
-
-        ul {
-            width: 100%;
-            height: 100%;
-            @include flex-center();
-
-            li {
-                position: relative;
-                flex: 1;
-                height: 100%;
-                @include background();
-                transition: .5s;
-
-                &:hover {
-
-                    .desc {
-                        opacity: 1;
-                        bottom: 60px;
-
-                    }
-                }
-
-                &.item1 {
-                    background-image: url(./images/item1.jpg);
-                }
-
-                &.item2 {
-                    background-image: url(./images/item2.jpg);
-                }
-
-                &.item3 {
-                    background-image: url(./images/item3.png);
-                }
-
-                .desc {
-                    position: absolute;
-                    left: 50px;
-                    bottom: -80px;
-                    opacity: 0;
-                    transition: 1.2s;
-
-                    button {
-                        margin-top: 40px;
-                        padding: 10px 20px;
-                        font-size: 16px;
-                        border: 1px solid #000;
-                        background-color: rgba(255, 255, 255, .2);
-
-                        &:hover {
-                            background-color: #000;
-                            color: #fff;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:800px) {
-    header {
-        .menu-icon {
-            display: inline-block;
-            position: absolute;
-            right: 10px;
-        }
-
-    }
-
-    section {
-
-        h2 {
-            font-size: 7vw;
-        }
-
-        h3{
             font-size: 5vw;
         }
 
@@ -865,7 +363,8 @@ section {
         }
 
         &.sect1 {
-            background-image: url(./images/brand_story_mo-bg.jpg);
+            background: url(./images/brand_story_mo.jpg) no-repeat center;
+            background-size: cover;
 
             h2 {
                 font-size: 8vw;
@@ -878,7 +377,7 @@ section {
         }
 
         &.sect2,
-        &.sect4{
+        &.sect4 {
 
             &>article {
                 width: 100%;
@@ -887,11 +386,11 @@ section {
             }
         }
 
-        &.sect3{
+        &.sect3 {
 
             &.on {
                 opacity: 1;
-    
+
                 .desc {
                     opacity: 1;
                     top: 48%;
@@ -903,19 +402,19 @@ section {
                 top: 15%;
                 left: 50%;
                 transform: translateX(-50%);
-    
+
             }
-    
+
             .desc {
                 width: 100%;
                 left: 50%;
                 transform: translateX(-50%);
                 top: 80%;
-    
+
                 .icon {
                     width: 35px;
                 }
-    
+
                 .item {
                     width: 300px;
                     height: 300px;
@@ -923,10 +422,11 @@ section {
             }
         }
 
-        &.sect5{
-            li{
+        &.sect5 {
+            li {
                 &:hover {
-                    flex: 10;}
+                    flex: 10;
+                }
             }
         }
     }
@@ -942,7 +442,8 @@ section {
 
     section {
         &.sect1 {
-            background: url(./images/brand_story_bg.jpg);
+            background: url(./images/brand_story_ta.jpg)no-repeat center;
+            background-size: cover;
 
             h2 {
                 font-size: 5vw;
@@ -955,7 +456,7 @@ section {
         }
 
         &.sect2,
-        &.sect4{
+        &.sect4 {
             display: flex;
 
             &>article {
@@ -964,11 +465,11 @@ section {
             }
         }
 
-        &.sect3{
+        &.sect3 {
 
             &.on {
                 opacity: 1;
-    
+
                 .desc {
                     opacity: 1;
                     top: 25%;
@@ -979,20 +480,20 @@ section {
                 width: 58%;
                 top: 27%;
                 left: 2%;
-    
+
                 video {
                     width: 100%;
                 }
             }
-    
+
             .desc {
                 right: 7%;
                 top: 50%;
-    
+
                 .icon {
                     width: 60px;
                 }
-    
+
                 .item {
                     width: 400px;
                     height: 350px;
@@ -1000,12 +501,22 @@ section {
             }
         }
 
-        &.sect5{
-            li{
+        &.sect5 {
+            li {
                 &:hover {
-                    flex: 4;}
+                    flex: 4;
+                }
             }
         }
 
+    }
+}
+
+@media screen and (min-width:1024px) {
+    section {
+        &.sect1 {
+            background: url(./images/brand_story_pc.jpg) no-repeat center;
+            background-size: cover;
+        }
     }
 }

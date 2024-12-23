@@ -141,17 +141,18 @@ section.sect2.on .desc, section.sect4.on .desc {
   opacity: 1;
   top: 50%;
 }
-section.sect2 .icon, section.sect4 .icon {
+section.sect2 .art1, section.sect4 .art1 {
+  position: relative;
+}
+section.sect2 .art1 .icon, section.sect4 .art1 .icon {
+  position: absolute;
   width: 80px;
   height: 80px;
   animation: icon-rotate 5s linear infinite;
   transform-origin: 50% 50%;
 }
-section.sect2 .icon img, section.sect4 .icon img {
+section.sect2 .art1 .icon img, section.sect4 .art1 .icon img {
   width: 100%;
-}
-section.sect2 .art1, section.sect4 .art1 {
-  position: relative;
 }
 section.sect2 .desc, section.sect4 .desc {
   text-align: center;
@@ -166,17 +167,16 @@ section.sect2 .desc, section.sect4 .desc {
 }
 section.sect2 .art2 video, section.sect4 .art2 video {
   width: 100%;
-  margin-top: -100px;
+  height: 100%;
+  object-fit: cover;
 }
 section.sect2 .icon {
-  position: absolute;
-  left: 150px;
-  top: -100px;
+  left: 10%;
+  top: -30%;
 }
 section.sect4 .icon {
-  position: absolute;
-  left: 700px;
-  top: 320px;
+  right: 10%;
+  bottom: -50%;
 }
 section.sect3 {
   position: relative;
@@ -281,7 +281,8 @@ section.sect5 ul li .desc button:hover {
     font-size: 3vw;
   }
   section.sect1 {
-    background-image: url(./images/brand_story_mo-bg.jpg);
+    background: url(./images/brand_story_mo.jpg) no-repeat center;
+    background-size: cover;
   }
   section.sect1 h2 {
     font-size: 8vw;
@@ -329,7 +330,8 @@ section.sect5 ul li .desc button:hover {
     display: block;
   }
   section.sect1 {
-    background: url(./images/brand_story_bg.jpg);
+    background: url(./images/brand_story_ta.jpg) no-repeat center;
+    background-size: cover;
   }
   section.sect1 h2 {
     font-size: 5vw;
@@ -372,5 +374,11 @@ section.sect5 ul li .desc button:hover {
   }
   section.sect5 li:hover {
     flex: 4;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.sect1 {
+    background: url(./images/brand_story_pc.jpg) no-repeat center;
+    background-size: cover;
   }
 }

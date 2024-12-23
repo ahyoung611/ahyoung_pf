@@ -1,10 +1,27 @@
+// header -------------------------------------
+const header = document.querySelector('header');
 
+if (window.scrollY <= 645) {
+    header.classList.remove('fixed');
+} else {
+    header.classList.add('fixed');
+}
 
+// 스크롤 이벤트 추가
+window.addEventListener('scroll', () => {
+    
+    const scrollY = window.scrollY;
+
+    if (scrollY > 645) {
+        header.classList.add('fixed');
+    } else {
+        header.classList.remove('fixed');
+    }
+});
 
 //banner -----------------------------------------------
 
-//swiper1
-var swiper1 = new Swiper(".Swiper1", {
+var BSwiper = new Swiper(".BSwiper", {
     effect: "fade",
     centeredSlides: true,
     speed: 1500,
@@ -20,20 +37,20 @@ var swiper1 = new Swiper(".Swiper1", {
 });
 
 //배너 swiper1의 화면전환 ------------------
-swiper1.on('slideChangeTransitionStart', function () {
-    if (swiper1.autoplay.running) {
-        swiper1.params.speed = 1500; // autoplay 중일 때는 서서히 전환
+BSwiper.on('slideChangeTransitionStart', function () {
+    if (BSwiper.autoplay.running) {
+        BSwiper.params.speed = 1500; // autoplay 중일 때는 서서히 전환
     } else {
-        swiper1.params.speed = 0; // 네비게이션 클릭 시 즉각 전환
+        BSwiper.params.speed = 0; // 네비게이션 클릭 시 즉각 전환
     }
 });
 
-swiper1.on('navigationPrev', function () {
-    swiper1.params.speed = 0; // 네비게이션 이전 버튼 클릭 시 즉각 전환
+BSwiper.on('navigationPrev', function () {
+    BSwiper.params.speed = 0; // 네비게이션 이전 버튼 클릭 시 즉각 전환
 });
 
-swiper1.on('navigationNext', function () {
-    swiper1.params.speed = 0; // 네비게이션 다음 버튼 클릭 시 즉각 전환
+BSwiper.on('navigationNext', function () {
+    BSwiper.params.speed = 0; // 네비게이션 다음 버튼 클릭 시 즉각 전환
 });
 
 //배너 하단의 page-wrap  클릭시 화면 전환 ----------------
@@ -41,7 +58,7 @@ const liElems = document.querySelectorAll('.page-wrap li a')
 // console.log(liElems);
 
 liElems.forEach(function (liElem, idx) {
-    // console.log(liElem, idx);
+
     liElem.addEventListener('click', function (e) {
         e.preventDefault()
 
@@ -51,7 +68,7 @@ liElems.forEach(function (liElem, idx) {
 
         liElem.classList.add('on')
 
-        swiper1.slideToLoop(idx, 500)
+        BSwiper.slideToLoop(idx, 500)
     })
 
     liElem.addEventListener('mouseenter', function () {
@@ -66,11 +83,10 @@ liElems.forEach(function (liElem, idx) {
 
 })
 
-//slideChange는 활성화된 슬라이드(swiper-slide-active)가 바뀔 때마다 이벤트를 호출
-swiper1.on('slideChange', function () {
+BSwiper.on('slideChange', function () {
 
     //해당 번째 인덱스 값을 get   //진짜 슬라이드의 인덱스 realIndex
-    let activeIdx = swiper1.realIndex
+    let activeIdx = BSwiper.realIndex
 
     liElems.forEach(function (item) {
         item.classList.remove('on')
@@ -79,12 +95,14 @@ swiper1.on('slideChange', function () {
     liElems[activeIdx].classList.add('on')
 })
 
-//left의 menu-bar 클릭하면 gnb-wrap이 열림 ---------------------------------------
-$('.open-btn').click(function () {
+//menu-bar 클릭하면 gnb-wrap이 열림 ---------------------
+$('.open-btn').click(function (e) {
+    e.preventDefault()
     $('.gnb-wrap').css('left', '0')
 })
 
-$('.close-btn').click(function () {
+$('.close-btn').click(function (e) {
+    e.preventDefault()
     $('.gnb-wrap').css('left', '-100%')
 })
 
@@ -98,15 +116,13 @@ $('.main-menu').mouseleave(function () {
     $(this).find('.sub-menu').stop().slideUp(500)
 })
 
+
 //gnb-list4의 swiper 
 var gnbSwiper = new Swiper(".gnbSwiper", {
-    pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-    },
+
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".gnbSwiper .swiper-button-next", // gnbSwiper 내의 next 버튼
+        prevEl: ".gnbSwiper .swiper-button-prev", // gnbSwiper 내의 prev 버튼
     },
 });
 
@@ -114,61 +130,44 @@ var gnbSwiper = new Swiper(".gnbSwiper", {
 var tSwiper = new Swiper(".t-Swiper", {
     slidesPerView: 5,
     spaceBetween: 30,
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
 });
 
 
-//sect2 tabSwiper -----------------------------------------------
+//sect2 rankSwiper --------------------------
 var rankSwiper = new Swiper(".rank-Swiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     freeMode: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
 });
 
 //tablist에  첫번째 li a.on
-$('.tab-menu li:first-child a').addClass('on')
-// 첫번째 tab.on
-$('.tab:first-child').addClass('on')
+$('.sect2 .tab-menu li:first-child a').addClass('on');
+$('.sect2 .tab:first-child').addClass('on');
 
 tabFuc('#sect2')
 tabFuc('#sect5')
 
 function tabFuc(target) {
-    //target 하위에
+
     let targetElem = document.querySelector(target)
     let aElems = targetElem.querySelectorAll('.tab-menu li a')
 
-
-
-    //$(target).find('.tablist li a').click(function () {
     aElems.forEach(function (a) {
         a.addEventListener('click', function (e) {
             e.preventDefault()
 
-            //$(target).find('.tablist li a').removeClass('on')
             for (let menu of targetElem.querySelectorAll('.tab-menu li a')) {
                 menu.classList.remove('on')
             }
-            //$(this).addClass('on')
+
             this.classList.add('on')
 
-            //let href = $(this).attr('href')
             let href = this.getAttribute('href')
 
-            //$(target).find('.tab').removeClass('on')
             for (let tab of targetElem.querySelectorAll('.tab')) {
                 tab.classList.remove('on')
             }
 
-            //$(href).addClass('on')
             targetElem.querySelector(href).classList.add('on')
 
         })
@@ -196,7 +195,6 @@ var bnrSwiper = new Swiper(".bnr-Swiper", {
 });
 
 const bElems = document.querySelectorAll('.swiper-pagination-bullet')
-//   console.log(bElems)
 
 bnrSwiper.on('init', function () {
     let activeIdx = bnrSwiper.realIndex;
@@ -205,7 +203,6 @@ bnrSwiper.on('init', function () {
 
 bnrSwiper.on('slideChange', function () {
     let activeIdx = bnrSwiper.realIndex
-    // console.log(activeIdx)
 
     bElems.forEach(function (item) {
         item.classList.remove('on')
@@ -217,43 +214,54 @@ bnrSwiper.on('slideChange', function () {
 bnrSwiper.init(); // Swiper를 수동으로 초기화
 
 //sect4 -----------------------------------------------
- const hedings=document.querySelectorAll('.title')
-      const tabs=document.querySelectorAll('.tab')
 
-      // 열려있는 tab을 기억하는 변수명
-      let activeTab=tabs[0]
-      openTab(activeTab)
+const hedings = document.querySelectorAll('.sect4 .accordion_title')
+const tabs = document.querySelectorAll('.sect4 .tab')
 
-      hedings.forEach((title)=>{
-        title.addEventListener('mouseenter',function(){
-          const parentTab=title.parentNode/* 클릭한 title의 부모 */
-          openTab(parentTab) //클릭한 타이틀을 open
+// 열려있는 tab을 기억하는 변수명
+let activeTab = tabs[0]
 
-          // if(activTab===parentTab){return} 
-          //근데 이건 굳이 안써도 되는데 다 열어야 할 때 쓰시오.
-          
-          if(activeTab){
-            closeTab(activeTab) // 열려있는 tab close
-          }
+// 초기 상태로 첫 번째 탭 열기
+openTab(activeTab)
 
-          activeTab=parentTab //클릭해서 열린 해당번째를 기억해둠
-        })
-      })
+hedings.forEach((title) => {
+    title.addEventListener('mouseenter', function () {
+        const parentTab = title.parentNode // 클릭한 title의 부모
+        openTab(parentTab)
 
-      function openTab(tab){
-        const desc = tab.querySelector('.desc')
-        tab.classList.add('on')
-        desc.style.maxHeight=desc.scrollHeight+'px'
-        desc.style.opacity=1
-      }
-      function closeTab(tab){
-        const desc = tab.querySelector('.desc')
-        tab.classList.remove('on')
-        desc.style.maxHeight=0
-        desc.style.opacity=0
-      }
+        if (activeTab && activeTab !== parentTab) {
+            closeTab(activeTab)
+        }
 
+        activeTab = parentTab
+    })
+})
 
+function openTab(tab) {
+    const desc = tab.querySelector('.accordion_desc')
+    tab.classList.add('on')
+    desc.style.maxHeight = desc.scrollHeight + 'px'
+    desc.style.opacity = 1
+}
+
+function closeTab(tab) {
+    const desc = tab.querySelector('.accordion_desc')
+    tab.classList.remove('on')
+    desc.style.maxHeight = 0
+    desc.style.opacity = 0
+}
+
+var evnSwiper = new Swiper(".evnSwiper", {
+    direction: "vertical", // 세로 슬라이드 설정
+    slidesPerView: 3, // 한 화면에 보여질 슬라이드 개수
+    spaceBetween: 10, // 슬라이드 간 간격 (옵션)
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    speed: 800,
+    loop: true,
+});
 
 
 //sect5 RegSwiper -----------------------------------------------
@@ -261,8 +269,24 @@ var RegSwiper = new Swiper(".region-Swiper", {
     slidesPerView: 5,
     spaceBetween: 30,
     freeMode: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
 });
+
+//footer
+document.querySelector(".family-btn").addEventListener("click", (event) => {
+    event.preventDefault(); // 기본 동작 방지
+    const familyMenu = document.querySelector(".family");
+    const button = event.currentTarget;
+
+    // 버튼과 메뉴에 동시에 on 클래스 토글
+    button.classList.toggle("on");
+    familyMenu.classList.toggle("on");
+
+    // 높이 조정
+    if (button.classList.contains("on")) {
+        familyMenu.style.height = "210px"; // 펼쳐진 높이
+    } else {
+        familyMenu.style.height = "28px"; // 기본 높이
+    }
+});
+
+
