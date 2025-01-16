@@ -139,8 +139,9 @@ $('.contents-list li').click(function (e) {
     $(this).find('a').addClass('on')
 })
 
+
 document.addEventListener("DOMContentLoaded", () => {
-    var RSwiper = new Swiper(".R-Swiper", {
+    var RSwiper = new Swiper(".sect5 .R-Swiper", {
         slidesPerView: 1,
         spaceBetween: 0,
 
@@ -161,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 
-    var PSwiper = new Swiper(".P-Swiper", {
+    var PSwiper = new Swiper(".sect5 .P-Swiper", {
         slidesPerView: 1,
         grid: {
             rows: 1,
@@ -191,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
     
-    var VSwiper = new Swiper(".V-Swiper", {
+    var VSwiper = new Swiper(".sect5 .V-Swiper", {
         slidesPerView: 1,
         grid: {
             rows: 1,
@@ -221,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 
-    var NSwiper = new Swiper(".N-Swiper", {
+    var NSwiper = new Swiper(".sect5 .N-Swiper", {
         slidesPerView: 1,
         spaceBetween: 0,
 

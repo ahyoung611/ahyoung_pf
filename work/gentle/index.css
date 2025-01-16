@@ -71,6 +71,8 @@ section.sect1 .art2 {
 section.sect2 {
   background-image: url(./images/옵티컬\ 컬렉션.png);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
 }
