@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import '/project/reset.css';
+@import './project/reset.css';
 @font-face {
   font-family: Pretendard-Regular;
   src: url(./font/Pretendard-Regular.woff);
