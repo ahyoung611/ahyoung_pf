@@ -1,10 +1,10 @@
 @import url(../reset.css);
 
-@import url(/project/app/font/pretendard.css);
+@import url(/project/app-process/font/pretendard.css);
 
 @font-face {
     font-family: 'Arial Rounded MT Bold Bold';
-    src: url(/project/app/font/ARIALROUNDEDMT.woff);
+    src: url(/project/app-process/font/ARIALROUNDEDMT.woff);
 }
 
 @mixin ar-font {
@@ -145,7 +145,7 @@ section {
         position: relative;
         height: $height-100vh;
         background-color: $main-color-600;
-        background-image: url(/project/app/images/app-back-bg.png);
+        background-image: url(/project/app-process/images/app-back-bg.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -756,7 +756,7 @@ section {
 
                 &.core-target {
                     position: relative;
-                    background-image: url(/project/app/images/target-line1.png);
+                    background-image: url(/project/app-process/images/target-line1.png);
 
                     p {
                         position: absolute;
@@ -782,7 +782,7 @@ section {
 
                 &.sub-target {
                     position: relative;
-                    background-image: url(/project/app/images/target-line2.png);
+                    background-image: url(/project/app-process/images/target-line2.png);
 
                     p {
                         position: absolute;
@@ -1301,7 +1301,7 @@ section {
 
             .logo {
                 display: inline-block;
-                background-image: url(/project/app/images/check-bg.png);
+                background-image: url(/project/app-process/images/check-bg.png);
                 @include background();
 
                 img {

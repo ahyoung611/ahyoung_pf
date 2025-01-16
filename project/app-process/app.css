@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @import url(/project/reset.css);
-@import url(/project/app/font/pretendard.css);
+@import url(/project/app-process/font/pretendard.css);
 @font-face {
   font-family: "Arial Rounded MT Bold Bold";
-  src: url(/project/app/font/ARIALROUNDEDMT.woff);
+  src: url(/project/app-process/font/ARIALROUNDEDMT.woff);
 }
 body {
   color: #333;
@@ -67,7 +67,7 @@ section.sect1 {
   position: relative;
   height: 100vh;
   background-color: #FF4D4F;
-  background-image: url(/project/app/images/app-back-bg.png);
+  background-image: url(/project/app-process/images/app-back-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -550,7 +550,7 @@ section.sect7 .target-box div li {
 }
 section.sect7 .target-box div.core-target {
   position: relative;
-  background-image: url(/project/app/images/target-line1.png);
+  background-image: url(/project/app-process/images/target-line1.png);
 }
 section.sect7 .target-box div.core-target p {
   position: absolute;
@@ -571,7 +571,7 @@ section.sect7 .target-box div.core-target li:nth-child(2) {
 }
 section.sect7 .target-box div.sub-target {
   position: relative;
-  background-image: url(/project/app/images/target-line2.png);
+  background-image: url(/project/app-process/images/target-line2.png);
 }
 section.sect7 .target-box div.sub-target p {
   position: absolute;
@@ -1030,7 +1030,7 @@ section.sect11 .logo-box {
 }
 section.sect11 .logo-box .logo {
   display: inline-block;
-  background-image: url(/project/app/images/check-bg.png);
+  background-image: url(/project/app-process/images/check-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
