@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @import url(../reset.css);
-@import url(./project/app-process/font/pretendard.css);
+@import url(/project/font/pretendard.css);
 @font-face {
   font-family: "Arial Rounded MT Bold Bold";
-  src: url(./project/app-process/font/ARIALROUNDEDMT.woff);
+  src: url(/project/font/ARIALROUNDEDMT.woff);
 }
 body {
   color: #333;
@@ -67,10 +67,6 @@ section.sect1 {
   position: relative;
   height: 100vh;
   background-color: #FF4D4F;
-  background-image: url(./images/app-back-bg.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   color: #fff;
   padding-left: 30px;
 }
