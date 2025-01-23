@@ -1,6 +1,6 @@
 @import url(../reset.css);
 
-@import url(/project/font/pretendard.css);
+@import url(./project/font/pretendard.css);
 
 @font-face {
     font-family: "Anton", serif;
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Arial Rounded MT Bold Bold';
-    src: url(/project/font/ARIALROUNDEDMT.woff);
+    src: url(./project/font/ARIALROUNDEDMT.woff);
 }
 
 $font-size-T1: 22px;
