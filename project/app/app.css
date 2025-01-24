@@ -1,8 +1,19 @@
 @charset "UTF-8";
 @import url(../reset.css);
-@import url(/project/font/pretendard.css);
 @font-face {
-  font-family: "Arial Rounded MT Bold Bold";
+  font-family: Pretendard-Regular;
+  src: url(./font/Pretendard-Regular.woff);
+}
+@font-face {
+  font-family: Pretendard-Medium;
+  src: url(./font/Pretendard-Regular.woff);
+}
+@font-face {
+  font-family: Pretendard-SemiBold;
+  src: url(./font/Pretendard-SemiBold.woff);
+}
+@font-face {
+  font-family: ArialRoundedMT;
   src: url(/project/font/ARIALROUNDEDMT.woff);
 }
 body {
@@ -15,7 +26,7 @@ body {
 .title1 {
   color: #FF4D4F;
   font-size: 22px;
-  font-family: "Arial Rounded MT Bold Bold";
+  font-family: ArialRoundedMT;
   padding-bottom: 20px;
   letter-spacing: 1px;
 }
@@ -89,7 +100,7 @@ section.sect1 .main .desc {
   position: absolute;
 }
 section.sect1 .main .desc h2 {
-  font-family: "Arial Rounded MT Bold Bold";
+  font-family: ArialRoundedMT;
 }
 section.sect1 .main .desc p {
   padding-top: 20px;
@@ -220,7 +231,7 @@ section.sect3 .survey > li .question .q-box {
   padding: 5px 10px;
   background-color: #FF4D4F;
   color: #fff;
-  font-family: "Arial Rounded MT Bold Bold";
+  font-family: ArialRoundedMT;
   font-size: 20px;
   border-radius: 2px;
 }
@@ -1065,11 +1076,11 @@ section.sect12 article.art1 .typography .font-style li.font-g {
 }
 section.sect12 article.art1 .typography .ar-font h2 {
   font-size: 100px;
-  font-family: "Arial Rounded MT Bold Bold";
+  font-family: ArialRoundedMT;
   color: #FF4D4F;
 }
 section.sect12 article.art1 .typography .ar-font h3 {
-  font-family: "Arial Rounded MT Bold Bold";
+  font-family: ArialRoundedMT;
   font-size: 20px;
   padding: 10px 0;
 }

@@ -1,14 +1,28 @@
 @import url(../reset.css);
 
-@import url(./font/pretendard.css);
+@font-face {
+    font-family: Pretendard-Regular;
+    src: url(./font/Pretendard-Regular.woff);
+}
 
 @font-face {
-    font-family: 'Arial Rounded MT Bold Bold';
+    font-family: Pretendard-Medium;
+    src: url(./font/Pretendard-Regular.woff);
+}
+
+@font-face {
+    font-family: Pretendard-SemiBold;
+    src: url(./font/Pretendard-SemiBold.woff);
+}
+
+@font-face {
+    font-family: ArialRoundedMT;
     src: url(./font/ARIALROUNDEDMT.woff);
 }
 
 @mixin ar-font {
-    font-family: 'Arial Rounded MT Bold Bold';
+    font-family: ArialRoundedMT;
+
 }
 
 $font-size-T1: 22px;
@@ -60,7 +74,7 @@ body {
 .title1 {
     color: $main-color-600;
     font-size: $font-size-T1;
-    font-family: 'Arial Rounded MT Bold Bold';
+    font-family: ArialRoundedMT;
     padding-bottom: 20px;
     letter-spacing: 1px;
 }
@@ -173,7 +187,7 @@ section {
                 position: absolute;
 
                 h2 {
-                    font-family: 'Arial Rounded MT Bold Bold';
+                    font-family: ArialRoundedMT;
                 }
 
                 p {
@@ -360,7 +374,7 @@ section {
                         padding: 5px 10px;
                         background-color: $main-color-600;
                         color: #fff;
-                        font-family: 'Arial Rounded MT Bold Bold';
+                        font-family: ArialRoundedMT;
                         font-size: $font-size-ST2;
                         border-radius: 2px;
                     }

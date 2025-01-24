@@ -1,11 +1,22 @@
 @import url(../reset.css);
-@import url(/project/font/pretendard.css);
+@font-face {
+  font-family: Pretendard-Regular;
+  src: url(./font/Pretendard-Regular.woff);
+}
+@font-face {
+  font-family: Pretendard-Medium;
+  src: url(./font/Pretendard-Medium.woff);
+}
+@font-face {
+  font-family: Pretendard-SemiBold;
+  src: url(./font/Pretendard-SemiBold.woff);
+}
 @font-face {
   font-family: "Anton", serif;
   src: url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 }
 @font-face {
-  font-family: "Arial Rounded MT Bold Bold";
+  font-family: ArialRoundedMT;
   src: url(/project/font/ARIALROUNDEDMT.woff);
 }
 body {
@@ -18,7 +29,7 @@ body {
 .title1 {
   color: #046BA9;
   font-size: 22px;
-  font-family: "Arial Rounded MT Bold Bold";
+  font-family: ArialRoundedMT;
   padding-bottom: 20px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -98,7 +109,7 @@ section.sect1 .main .desc {
   transform: translateY(-50%);
 }
 section.sect1 .main .desc h2 {
-  font-family: "Arial Rounded MT Bold Bold";
+  font-family: ArialRoundedMT;
   font-size: 5rem;
 }
 section.sect1 .main .desc p {
