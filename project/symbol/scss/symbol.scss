@@ -16,12 +16,12 @@
 }
 
 @font-face {
-    font-family: ArialRoundedMT;
+    font-family: 'ArialRoundedMT';
     src: url(./font/ARIALROUNDEDMT.woff);
 }
 
 @mixin ar-font {
-    font-family: ArialRoundedMT;
+    font-family: 'ArialRoundedMT';
 }
 
 $font-size-T1: 22px;

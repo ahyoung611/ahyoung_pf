@@ -16,8 +16,8 @@
   src: url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 }
 @font-face {
-  font-family: ArialRoundedMT;
-  src: url(/project/font/ARIALROUNDEDMT.woff);
+  font-family: "ArialRoundedMT";
+  src: url(./font/ARIALROUNDEDMT.woff);
 }
 body {
   color: #333;

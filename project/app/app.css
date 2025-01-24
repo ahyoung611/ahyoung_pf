@@ -13,8 +13,8 @@
   src: url(./font/Pretendard-SemiBold.woff);
 }
 @font-face {
-  font-family: ArialRoundedMT;
-  src: url(/project/font/ARIALROUNDEDMT.woff);
+  font-family: "ArialRoundedMT";
+  src: url(./font/ARIALROUNDEDMT.woff);
 }
 body {
   color: #333;
@@ -1076,11 +1076,11 @@ section.sect12 article.art1 .typography .font-style li.font-g {
 }
 section.sect12 article.art1 .typography .ar-font h2 {
   font-size: 100px;
-  font-family: ArialRoundedMT;
+  font-family: "ArialRoundedMT";
   color: #FF4D4F;
 }
 section.sect12 article.art1 .typography .ar-font h3 {
-  font-family: ArialRoundedMT;
+  font-family: "ArialRoundedMT";
   font-size: 20px;
   padding: 10px 0;
 }
