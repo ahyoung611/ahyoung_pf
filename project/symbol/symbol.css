@@ -85,7 +85,7 @@ section.sect1 {
 section.sect1 .pf_bg {
   position: absolute;
   right: -5px;
-  top: -120px;
+  top: -130px;
 }
 section.sect1 .top {
   width: 100%;
@@ -347,7 +347,7 @@ section.sect5 .logo-key .body2 {
   line-height: 1.5;
 }
 section.sect5 .logo-key.self {
-  right: 4%;
+  right: 2%;
   top: 27%;
 }
 section.sect5 .logo-key.self h2::after {
@@ -361,11 +361,11 @@ section.sect5 .logo-key.self h2::after {
 }
 section.sect5 .logo-key.self h2::before {
   position: absolute;
-  left: -130px;
+  left: -150px;
   top: 50%;
   transform: translateY(-50%);
   content: "";
-  width: 120px;
+  width: 140px;
   height: 2px;
   background-color: #053F64;
 }

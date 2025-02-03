@@ -164,6 +164,9 @@ section.sect3 .survey .survey2 .graph .graph3 .graph-box {
   height: 80px;
   background-color: #FF8B8C;
 }
+section.sect3 .survey .survey3 {
+  position: relative;
+}
 section.sect3 .survey .survey3 .graph {
   align-items: center;
 }
@@ -214,6 +217,14 @@ section.sect3 .survey .survey3 .graph .circle-list li:nth-child(2) {
 }
 section.sect3 .survey .survey3 .graph .circle-list li:nth-child(2)::after {
   background-color: #FFC1C2;
+}
+section.sect3 .survey .survey3::after {
+  content: "2024.09.10 실시 / 102명 참여";
+  font-size: 16px;
+  color: #6D6E71;
+  position: absolute;
+  right: 10px;
+  top: -25px;
 }
 section.sect3 .survey > li {
   height: 580px;
@@ -1112,7 +1123,7 @@ section.sect12 article.art2 .color-box .color.main .co3 {
   background-color: #FFEEEE;
 }
 section.sect12 article.art2 .color-box .color.main .co4 {
-  background-color: #FDFDFD;
+  background-color: #FFF8F7;
 }
 section.sect12 article.art2 .color-box .color.neutral .col1 {
   background-color: #333;
@@ -1127,7 +1138,7 @@ section.sect12 article.art2 .color-box .color.neutral .co3 {
   background-color: #B3B3B3;
 }
 section.sect12 article.art2 .color-box .color.neutral .co4 {
-  background-color: #fff;
+  background-color: #FDFDFD;
 }
 section.sect12 article.art2 .color-box .color .col {
   height: 60%;
@@ -1206,6 +1217,70 @@ section.sect12 article.art2 .icon .sub {
 }
 section.sect12 article.art2 .icon .sub .icon-box {
   width: 350px;
+}
+section.sect13 {
+  background-color: #FFF8F7;
+  height: auto;
+}
+section.sect13 .Concept-title {
+  width: 80%;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.sect13 .Concept-title figure img {
+  width: 300px;
+  object-fit: cover;
+  padding-bottom: 10px;
+}
+section.sect13 .Concept-title .applogo {
+  width: 100px;
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1);
+}
+section.sect13 .art {
+  width: 80%;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.sect13 .art:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+section.sect13 .art .homeImg {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 600px;
+}
+section.sect13 .art .homeImg img {
+  width: 180px;
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1);
+}
+section.sect13 .art .homeDesc {
+  width: 550px;
+}
+section.sect13 .art .homeDesc .homeDesc-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #FF4D4F;
+  padding-bottom: 20px;
+}
+section.sect13 .art .homeDesc .homeDesc-title img {
+  width: 34px;
+}
+
+footer {
+  height: 30vh;
+  background-color: #FF4D4F;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 800px) {
@@ -1330,7 +1405,7 @@ section.sect12 article.art2 .icon .sub .icon-box {
 @media screen and (min-width: 801px) {
   section.sect1 .pf_bg {
     right: -5px;
-    top: -120px;
+    top: -130px;
   }
   section.sect1 .main .desc {
     left: 10%;

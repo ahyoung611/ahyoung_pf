@@ -91,7 +91,7 @@ section.sect1 {
 section.sect1 .pf_bg {
   position: absolute;
   right: -5px;
-  top: -120px;
+  top: -130px;
 }
 section.sect1 .top {
   width: 100%;
@@ -798,25 +798,25 @@ section.sect9 article.art2 .color-box .color {
   margin-bottom: 100px;
 }
 section.sect9 article.art2 .color-box .color.main .col1 {
-  background-color: #000;
-}
-section.sect9 article.art2 .color-box .color.main .co1 {
   background-color: #F0AD4E;
 }
-section.sect9 article.art2 .color-box .color.main .co2 {
+section.sect9 article.art2 .color-box .color.main .co1 {
   background-color: #F5CA8C;
 }
-section.sect9 article.art2 .color-box .color.main .co3 {
+section.sect9 article.art2 .color-box .color.main .co2 {
   background-color: #FAE2C1;
+}
+section.sect9 article.art2 .color-box .color.main .co3 {
+  background-color: #FDF7ED;
 }
 section.sect9 article.art2 .color-box .color.main .co4 {
   background-color: #fff;
 }
 section.sect9 article.art2 .color-box .color.neutral .col1 {
-  background-color: #333;
+  background-color: #1C1C1E;
 }
 section.sect9 article.art2 .color-box .color.neutral .co1 {
-  background-color: #1C1C1E;
+  background-color: #333;
 }
 section.sect9 article.art2 .color-box .color.neutral .co2 {
   background-color: #6D6E71;
@@ -904,4 +904,38 @@ section.sect9 article.art2 .icon .sub {
 }
 section.sect9 article.art2 .icon .sub .icon-box {
   width: 350px;
+}
+section.sect10 {
+  height: 100vh;
+  background-image: url(./images/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section.sect11 {
+  height: auto;
+}
+section.sect11 figure {
+  width: 70%;
+  text-align: center;
+  margin: 80px auto;
+}
+section.sect11 figure img {
+  width: 100%;
+  background-color: #000;
+  border-radius: 50px;
+  border: 30px solid #000;
+}
+section.sect11 figure figcaption {
+  padding-top: 70px;
+}
+
+footer {
+  height: 30vh;
+  background-color: #F0AD4E;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
 }

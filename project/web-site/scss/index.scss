@@ -19,31 +19,23 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-;
+};
 
 @mixin flex {
     display: flex;
-}
-
-;
+};
 
 @mixin flex-ceter {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-;
+};
 
 @mixin flex-sb {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-;
+};
 
 :root {
     --main-color: #f0ad4e;
@@ -670,7 +662,7 @@ footer {
         }
 
         .tel {
-            color: #fee407;
+            color: var(--main-color);
             font-size: 2.5rem;
             font-weight: 700;
         }

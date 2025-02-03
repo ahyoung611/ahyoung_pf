@@ -88,7 +88,7 @@ section.sect1 {
 section.sect1 .pf_bg {
   position: absolute;
   right: -5px;
-  top: -120px;
+  top: -130px;
 }
 section.sect1 .top {
   width: 100%;
@@ -527,4 +527,38 @@ section.sect6 article.art2 .icon ul.icon-box li:nth-child(even) p::before {
 section.sect6 article.art2 .icon ul.icon-box li img {
   width: 100%;
   padding-bottom: 50px;
+}
+section.sect10 {
+  height: 100vh;
+  background-image: url(./images/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section.sect11 {
+  height: auto;
+}
+section.sect11 figure {
+  width: 70%;
+  text-align: center;
+  margin: 80px auto;
+}
+section.sect11 figure img {
+  width: 100%;
+  background-color: #000;
+  border-radius: 50px;
+  border: 30px solid #000;
+}
+section.sect11 figure figcaption {
+  padding-top: 70px;
+}
+
+footer {
+  height: 30vh;
+  background-color: #046BA9;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
 }

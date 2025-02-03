@@ -139,7 +139,7 @@ section {
         .pf_bg {
             position: absolute;
             right: -5px;
-            top: -120px;
+            top: -130px;
         }
 
         .top {
@@ -956,19 +956,19 @@ section {
 
                         &.main {
                             .col1 {
-                                background-color: #000;
-                            }
-
-                            .co1 {
                                 background-color: $main-color-600;
                             }
 
-                            .co2 {
+                            .co1 {
                                 background-color: $main-color-500;
                             }
 
-                            .co3 {
+                            .co2 {
                                 background-color: $main-color-400;
+                            }
+
+                            .co3 {
+                                background-color: $sub-color-500;
                             }
 
                             .co4 {
@@ -978,11 +978,12 @@ section {
 
                         &.neutral {
                             .col1 {
-                                background-color: $neutral-color-600
+                                background-color: 
+                                $sub-color-600;
                             }
 
                             .co1 {
-                                background-color: $sub-color-600;
+                                background-color: $neutral-color-600;
                             }
 
                             .co2 {
@@ -1094,6 +1095,45 @@ section {
             }
         }
     }
+
+    //Design Concept ----------------------------
+    //Hero Section
+    &.sect10{
+        height: $height-100vh;
+        background-image: url(./images/hero.png);
+        @include background();
+    }
+
+    &.sect11{
+        height: auto;
+
+        figure{
+            width: 70%;
+            text-align: center;
+            margin: 80px auto;
+
+            img{
+                width: 100%;
+                background-color: #000;
+                border-radius: 50px;
+                border: 30px solid #000;
+            }
+
+            figcaption{
+                padding-top: 70px;
+            }
+        }
+    }
+
+}
+footer{
+    height: 30vh;
+    background-color: $main-color-600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
 }
 
 

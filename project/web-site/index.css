@@ -520,7 +520,7 @@ footer .row p {
   line-height: 1.5;
 }
 footer .row .tel {
-  color: #fee407;
+  color: var(--main-color);
   font-size: 2.5rem;
   font-weight: 700;
 }

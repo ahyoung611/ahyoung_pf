@@ -136,7 +136,7 @@ section {
         .pf_bg {
             position: absolute;
             right: -5px;
-            top: -120px;
+            top: -130px;
         }
 
         .top {
@@ -457,7 +457,7 @@ section {
             }
 
             &.self {
-                right: 4%;
+                right: 2%;
                 top: 27%;
 
                 h2 {
@@ -473,11 +473,11 @@ section {
 
                     &::before {
                         position: absolute;
-                        left: -130px;
+                        left: -150px;
                         top: 50%;
                         transform: translateY(-50%);
                         content: '';
-                        width: 120px;
+                        width: 140px;
                         height: 2px;
                         background-color: $main-color-600;
                     }
