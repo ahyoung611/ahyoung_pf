@@ -118,7 +118,7 @@ nav a {
 /* sect1 */
 
 .sect1 {
-    background-image: url(./images/3ce배너.jpg);
+    background-image: url(./images/banner.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -272,7 +272,7 @@ h4 {
 }
 
 .sect5 {
-    background-image: url(./images/footer-3ce배너.jpg);
+    background-image: url(./images/footer-banner.jpg);
     background-size: cover;
     flex-direction: column;
     position: relative;

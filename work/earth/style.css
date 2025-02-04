@@ -276,7 +276,7 @@ article.on>div {
 
 .art1 .item1 {
     grid-column: 1/span 5;
-    background-image: url(./images/지구오락실2.jpg);
+    background-image: url(./images/1-bg.jpg);
     grid-row: 1/1;
 }
 
@@ -284,7 +284,7 @@ article.on>div {
     grid-column: 1/span 1;
     grid-row: 2/span 2;
     overflow: hidden;
-    background-image: url(./images/1-토롱3.jpg);
+    background-image: url(./images/1-torong.jpg);
 }
 
 .art1 .item2 .col {
@@ -308,7 +308,7 @@ article.on>div {
 
 
 .art1 .item3 {
-    background-image: url(./images/1-이은지1.jpg);
+    background-image: url(./images/1-enji.jpg);
 }
 
 .art1 .item3 .col {
@@ -345,19 +345,19 @@ article.on>div {
 }
 
 .art1 .item5 {
-    background-image: url(./images/1-이영지4.jpg);
+    background-image: url(./images/1-young.jpg);
 }
 
 .art1 .item6 {
-    background-image: url(./images/1-우주.gif);
+    background-image: url(./images/1-space.gif);
 }
 
 .art1 .item7 {
-    background-image: url(./images/1-눈.gif);
+    background-image: url(./images/1-eye.gif);
 }
 
 .art1 .item8 {
-    background-image: url(./images/1-김미미2.jpg);
+    background-image: url(./images/1-meme.jpg);
 }
 
 .art1 .item9 {
@@ -375,14 +375,14 @@ article.on>div {
 
 
 .art1 .item10 {
-    background-image: url(./images/1-안유진5.jpg);
+    background-image: url(./images/1-youjin.jpg);
 }
 
 /* art2 */
 .art2 {
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(11, 1fr);
-    background-image: url(./images/earth-bg.jpg);
+    background-image: url(./images/2-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -396,7 +396,7 @@ article.on>div {
 .art2 .item2 {
     grid-column: 3/span 5;
     grid-row: 1/span 2;
-    background-image: url(./images/2-타이틀.png);
+    background-image: url(./images/2-title.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -427,14 +427,14 @@ video {
 .art2 .item6 {
     grid-column: 6/span 3;
     grid-row: 3/span 4;
-    background-image: url(./images/게임스타트.jpg);
+    background-image: url(./images/start.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .art2 .item6:hover {
-    background-image: url(./images/미미현타.gif);
+    background-image: url(./images/memeH.gif);
 }
 
 .art2 .item7 {
@@ -445,40 +445,40 @@ video {
 .art2 .item8 {
     grid-column: 2/span 2;
     grid-row: 8/span 3;
-    background-image: url(./images/액션딸기.jpg);
+    background-image: url(./images/action.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .art2 .item8:hover {
-    background-image: url(./images/딸기게임\ 영지.gif);
+    background-image: url(./images/strawberry.gif);
 }
 
 .art2 .item9 {
     grid-column: 4/span 2;
     grid-row: 8/span 3;
-    background-image: url(./images/레트로음악퀴즈.jpg);
+    background-image: url(./images/retro.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .art2 .item9:hover {
-    background-image: url(./images/센터본능\ 유진.gif);
+    background-image: url(./images/center.gif);
 }
 
 .art2 .item10 {
     grid-column: 6/span 3;
     grid-row: 7/span 4;
-    background-image: url(./images/보너스스테이지.jpg);
+    background-image: url(./images/bonusstage.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .art2 .item10:hover {
-    background-image: url(./images/뽀너스.gif);
+    background-image: url(./images/bonus.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -499,7 +499,7 @@ video {
     cursor:default;
     grid-column: 1/span 5;
     grid-row: 1/span 10;
-    background-image: url(./images/3토롱굿즈-bg.jpg);
+    background-image: url(./images/3-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -514,7 +514,7 @@ video {
 .art3 .item2 {
     grid-column: 6/span 2;
     grid-row: 1/span 3;
-    background-image: url(./images/하얀티1.png);
+    background-image: url(./images/whiteT.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -549,7 +549,7 @@ video {
 .art3 .item3 {
     grid-column: 8/span 2;
     grid-row: 1/span 3;
-    background-image: url(./images/검정티2.png);
+    background-image: url(./images/blackT2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -558,7 +558,7 @@ video {
 .art3 .item4 {
     grid-column: 10/span 2;
     grid-row: 1/span 3;
-    background-image: url(./images/인형자켓.png);
+    background-image: url(./images/doll-jacket.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -567,7 +567,7 @@ video {
 .art3 .item5 {
     grid-column: 6/span 2;
     grid-row: 4/span 3;
-    background-image: url(./images/안대.png);
+    background-image: url(./images/eyepatch.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -576,7 +576,7 @@ video {
 .art3 .item6 {
     grid-column: 8/span 2;
     grid-row: 4/span 3;
-    background-image: url(./images/토롱이쿠션.png);
+    background-image: url(./images/torongC.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -585,7 +585,7 @@ video {
 .art3 .item7 {
     grid-column: 10/span 2;
     grid-row: 4/span 3;
-    background-image: url(./images/양말.png);
+    background-image: url(./images/socks.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -594,7 +594,7 @@ video {
 .art3 .item8 {
     grid-column: 6/span 2;
     grid-row: 7/span 3;
-    background-image: url(./images/토롱그립톡.png);
+    background-image: url(./images/torongG.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -604,7 +604,7 @@ video {
 .art3 .item9 {
     grid-column: 8/span 2;
     grid-row: 7/span 3;
-    background-image: url(./images/토롱이키링.png);
+    background-image: url(./images/torongK.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -613,7 +613,7 @@ video {
 .art3 .item10 {
     grid-column: 10/span 2;
     grid-row: 7/span 3;
-    background-image: url(./images/토롱이파우치.png);
+    background-image: url(./images/torongP.png);
     
     background-size: cover;
     background-position: center;

@@ -43,22 +43,22 @@ body{
 }
 
 .bg0{
-  background-image: url(./images/동숲배경.jpg);
+  background-image: url(./images/animalBg.jpg);
 }
 .bg1{
-    background-image: url(./images/루이지멘션배경.jpg);
+    background-image: url(./images/luigiBg.jpg);
 }
 .bg2{
-   background-image: url(./images/짱구는못말려배경.jpg);
+   background-image: url(./images/chanBg.jpg);
 }
 .bg3{
- background-image: url(./images/스플래툰배경.jpg);
+ background-image: url(./images/splatoonBg.jpg);
 }
 .bg4{
-   background-image: url(./images/별의커비배경.jpg);
+   background-image: url(./images/kirbyBg.jpg);
 }
 .bg5{
-    background-image: url(./images/젤다배경.jpg);
+    background-image: url(./images/zeldaBg.jpg);
 }
 
 /* header */
@@ -102,7 +102,7 @@ main {
     position: relative;
     max-width: 100%;
     height: 70%;
-    background-image: url(./images/닌텐도스위치.png);
+    background-image: url(./images/nintendoSwich.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
