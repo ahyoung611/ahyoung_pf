@@ -1,0 +1,282 @@
+@font-face {
+    font-family: NanumBarunGothic;
+    src: url(./font/NanumBarunGothic.woff);
+}
+
+@font-face {
+    font-family: NanumBarunGothicBold;
+    src: url(./font/NanumBarunGothicBold.woff);
+}
+
+@font-face {
+    font-family: NanumBarunGothicUltraLight;
+    src: url(./font/NanumBarunGothicUltraLight.woff);
+}
+
+@font-face {
+    font-family: JTUSjIg;
+    src: url(./font/JTUSjIg.woff2);
+}
+
+.flex {
+    display: flex;
+}
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    min-height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    z-index: 99;
+    border: 1px solid #f00;
+}
+
+header h1 img {
+    width: 200px;
+    padding-left: 50px;
+}
+
+header nav {
+    width: 500px;
+    padding-right: 50px;
+    font-family: JTUSjIg;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header nav ul {
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sect1 .container .col {
+    width: 50%;
+}
+
+.wrap {
+    position: relative;
+}
+
+/* sns */
+.wrap .sns {
+    position: fixed;
+    top: 140px;
+    right: 60px;
+    z-index: 99;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.wrap .sns p img {
+    width: 40px;
+}
+
+/* sect1 */
+.sect1 {
+    background-color: #ffe9b3;
+}
+
+.sect1 .container {
+    align-items: center;
+    padding: 190px 0 85px 0;
+}
+
+.sect1 .col {
+    position: relative;
+}
+
+.sect1 .col1 .year {
+    position: absolute;
+    top: 6px;
+    left: 38px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.sect1 .col1 .name1 {
+    color: #222;
+    font-family: JTUSjIg;
+    font-size: 60px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.sect1 .col1 .name2 {
+    color: #646464;
+    font-family: NanumBarunGothic;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.sect1 .col1 ul {
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.sect1 .col1 ul li.caption {
+    border: 1px solid #ffa421;
+    color: #ffa421;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-family: NanumBarunGothic;
+    text-align: center;
+    font-weight: 700;
+}
+
+.text {
+    color: #222;
+    font-family: NanumBarunGothicUltraLight;
+    line-height: 2;
+}
+
+.sect1 .col2 {
+    width: 50%;
+    text-align: right;
+}
+
+
+/* sect2 */
+.tit {
+    font-family: NanumBarunGothicUltraLight;
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+}
+
+.sect2 {
+    padding-top: 80px;
+}
+
+.sect3 {
+    padding: 80px 0;
+}
+
+.sect2 ul,
+.sect3 ul {
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.sect2 ul li,
+.sect3 ul li {
+    position: relative;
+    width: calc(25% - 12px);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+/* desc */
+.sect2 ul li:hover .desc {
+    opacity: 1;
+}
+
+.sect3 ul li:hover .desc {
+    opacity: 1;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.35s;
+    color: #fff;
+    text-align: center;
+    background-color: #ffbe54;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ffbe54;
+    border-radius: 20px;
+    font-family: NanumBarunGothic;
+}
+
+.gtit {
+    font-size: 24px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.gtit::after {
+    content: '';
+    height: 2px;
+    width: 15px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translatex(-50%);
+}
+
+.text2 {
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 10px 20px;
+}
+
+/* figure */
+.sect2 ul li figure img,
+.sect3 ul li figure img {
+    width: 100%;
+}
+
+.sect2 ul li figure .bg,
+.sect3 ul li figure .bg {
+    height: 100%;
+    background-image: url(./img/gdtm-01.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sect2 ul li figcaption,
+.sect3 ul li figcaption {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%);
+    font-size: 25px;
+    color: #333;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #222;
+}
+
+footer .copy-box {
+    width: 80%;
+    color: #666;
+    margin-top: 10px;
+    font-family: JTUSjIg;
+    padding: 50px;
+}
+
+footer .link-box {
+    width: 20%;
+    text-align: right;
+    font-size: 0.75rem;
+    padding: 50px;
+}
+
+footer .link-box a {
+    display: inline-block;
+    padding: 10px 30px;
+    border: solid 1px #fff;
+    border-radius: 30px;
+    color: #fff;
+}

@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+body {
+    background: #fff;
+}
+
+button {
+    border: none;
+}
+
+/* 공통속성 */
+.flex {
+    display: flex;
+}
+
+.align-c {
+    align-items: center;
+}
+
+.just-c {
+    justify-content: center;
+}
+
+.just-sb {
+    justify-content: space-between;
+}
+
+.wrap {
+    max-width: 1920px;
+}
+
+button {
+    padding: 14px 35px;
+    font-size: 12px;
+    border: 2px solid #000;
+}
+
+button:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar {
+    height: 100%;
+    position: relative;
+}
+
+h1 {
+    max-width: 150px;
+}
+
+h1 img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav li {
+    max-width: 30px;
+}
+
+nav img {
+    width: 100%;
+}
+
+nav {
+    position: absolute;
+    right: 100px;
+    top: 0;
+    height: 100%;
+}
+
+nav ul {
+    gap: 30px;
+    height: 100%;
+}
+
+/* main */
+/* sect1 */
+.sect1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/sect1-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.sect1 h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* sect2 */
+.sect2 {
+    width: 100%;
+    text-align: center;
+}
+
+.sect2 h2 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 120px 50px;
+    text-transform: uppercase;
+}
+
+/* sectt3~ 공통속성 */
+.art1 {
+    position: relative;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.art1 h3 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.art1 p {
+    padding: 20px 0;
+    ;
+}
+
+.art2 {
+    width: 100%;
+}
+
+.bag {
+    z-index: 99;
+}
+
+.bag img {
+    width: 100%;
+    margin-top: -150px;
+}
+
+
+.color-b {
+    gap: 10px;
+}
+
+.color-b li {
+    width: 40px;
+    padding: 3px;
+}
+
+.color-b li.on {
+    border: 2px solid #000;
+    border-radius: 99px;
+}
+
+.color-b li img {
+    width: 100%;
+    border-radius: 99px;
+}
+
+.summary h3 {
+    font-size: 26px;
+}
+
+.summary p {
+    font-weight: normal;
+    line-height: 1.5;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .35px;
+}
+
+.line {
+    position: relative;
+}
+
+.line::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+}
+
+.colp {
+    font-size: 13px !important;
+}
+
+.col {
+    position: absolute;
+    color: #fff;
+}
+
+.row-rv {
+    flex-direction: row-reverse;
+}
+
+.col-r {
+    text-align: right;
+}
+
+
+
+/* b-bg */
+.sect3 .b-bg {
+    background-image: url(./images/sect3-bg.png);
+}
+
+.sect4 .b-bg {
+    background-image: url(./images/sect4-bg.png);
+}
+
+.sect5 .b-bg {
+    background-image: url(./images/sect5-bg.png);
+}
+
+.sect6 .b-bg {
+    background-image: url(./images/sect6-bg.png);
+}
+
+/*모바일***/
+@media screen and (max-width: 640px) {
+
+    header nav {
+        display: none;
+    }
+
+    /* sect1 */
+    .sect1-pc {
+        display: none;
+    }
+
+    .sect1 h2 {
+        width: 90%;
+    }
+
+    .sect1 h2 img {
+        width: 100%;
+    }
+
+    .art2 {
+        flex-direction: column;
+        padding: 2vw 0;
+    }
+
+    .bag {
+        width: 100%;
+    }
+
+    .summary {
+        width: 100%;
+        padding: 2vw 2vw;
+    }
+
+    .sect3 .col {
+        left: 5%;
+        top: 15%;
+    }
+
+    .sect4 .col {
+        right: 5%;
+        top: 15%;
+    }
+
+    .sect5 .col {
+        left: 5%;
+        bottom: 30%;
+        width: 60%
+    }
+
+    .sect6 .col {
+        left: 5%;
+        bottom: 45%;
+        text-align: left;
+        width: 60%
+    }
+
+
+
+
+}
+
+/*테블릿***/
+@media screen and (min-width: 641px) {
+    .sect1-mobile {
+        display: none;
+    }
+
+    .sect1 h2 {
+        width: 65%;
+    }
+
+    .sect1 h2 img {
+        width: 100%;
+    }
+
+    .art2 {
+        padding: 0 8vw;
+    }
+
+    .bag {
+        width: 50%;
+    }
+
+    .summary {
+        width: 50%;
+        padding: 2vw 5vw;
+    }
+
+    .col {
+        left: 45%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
+}
+
+/*PC***/
+@media screen and (min-width: 980px) {
+    /* sect1 */
+
+}

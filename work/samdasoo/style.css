@@ -1,0 +1,301 @@
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+/* figure video */
+figure.video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+figure.video video {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* header */
+header {
+    position: fixed;
+    height: 100%;
+    width: 800px;
+    left: -720px;
+    top: 0;
+    background-image: linear-gradient(to right top, #c6daff, #d8e2ff, #e8ebff, #f5f5ff, #ffffff);
+    transform: skew(-40deg);
+}
+
+header h1 img {
+    width: 25%;
+    position: absolute;
+    left: 400px;
+    top: 30px;
+    transform: skew(40deg);
+}
+/* nav */
+        /* 부모 header를 skew 해서 nav를 왼쪽에서 오른쪽으로 위치하기 위해 */
+nav {
+    position: absolute;
+    right: 0;
+    top: 110px;
+    width: 170px;
+}
+
+        /* a는 inline 요소에서 width:100% 아니다, hover 시에 전체영역에 배경색이 적용이 안되기 때문에 */
+nav a {
+    display: block;
+    font-size: 18px;
+}
+
+        /* 부모 a의 영역이 hover skew 되어 있어 좋은데 글자까지 기울어서 b 태그로 쌓았는데 inline 요소는 transform 적용이 안됨 */
+nav b {
+    display: block;
+    font-weight: normal;
+    transform: skew(40deg);
+}
+
+        /* 부모에 속하여 hover 보이게 */
+li.main-menu {
+    position: relative;
+}
+
+        /* 메인 메뉴에 있는 a 값만[서브 메뉴에 a는 제외] >사용 */
+li.main-menu>a {
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(198, 218, 255, .5);
+}
+
+li.main-menu:hover>a {
+    background: #0066ff;
+    color: #fff;
+    font-weight: bold;
+}
+
+li.main-menu:hover ul.sub-menu {
+    display: block;
+    
+}
+
+        /* display:none으로 사라진것 처럼 보이게 */
+ul.sub-menu {
+    position: absolute;
+    width: 85%;
+    background: rgba(255, 255, 255, 0.8);
+    left: 100%;
+    top: 0;
+    display: none;
+}
+
+ul.sub-menu li{border-bottom: 1px solid rgba(198, 218, 255, .8);}
+
+ul.sub-menu li a {
+    padding: 10px 15px 10px 20px;
+}
+
+ul.sub-menu li:hover a {
+    color: #0066ff;
+    font-weight: bold;
+    
+}
+
+
+/* aside */
+aside {
+    position: fixed;
+    right: -800px;
+    bottom: 0;
+    width: 800px;
+    height: 100%;
+    background: #fff;
+    transform: skew(-40deg);
+    transition: .35s;
+    cursor: pointer;
+}
+
+.brand {
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(198, 218, 255, .5);
+    transition: .35s;
+}
+
+/* 커지게 */
+aside:hover {
+    right: -600px;
+}
+
+aside:hover .brand {
+    left: 5%;
+}
+
+        /* li태그 기본적 이동 */
+aside:hover .brand ul li {
+    transform: translateX(10px);
+}
+
+aside:hover .brand ul li:nth-child(1) {
+    transition-delay: .5s;
+}
+
+aside:hover .brand ul li:nth-child(2) {
+    transition-delay: .8s;
+}
+
+aside:hover .brand ul li:nth-child(3) {
+    transition-delay: 1s;
+}
+
+.brand ul {
+    position: absolute;
+    bottom: 5%;
+    left: 60px;
+}
+
+
+
+.brand ul li {
+    display: flex;
+    gap: 10px;
+    transition: .3s;
+    transform: translateX(800px);
+    padding: 30px 0;
+   
+}
+
+
+.brand ul li img {
+    width: 50px;
+    transform: skew(40deg) ; 
+    /* scale(1) */
+
+}
+
+.brand span{
+    color: #0066ff;
+}
+
+.brand h3 {
+    transform: skew(40deg);
+    font-weight: 400;
+}
+
+        /* hover시 안보이게 */
+
+
+/* btn */
+.btn {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    /* left: -30px; */
+    font-size: 80px;
+    color: #0066ff;
+
+    width: 200px;
+    height: 100px;
+    transform: skew(40deg);
+    transition: .35s;
+}
+
+        /* hover시 안보이게 끝으로가 */
+aside:hover .btn {
+    opacity: 0;
+   /*  left: 100%; */
+}
+
+        /* 부모에 width height 지정 */
+        /* liner:가속없이  infinite:반복 */
+.btn i {
+    position: absolute;
+    animation: btn-ani 1.5s linear infinite;
+}
+
+.btn i:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.btn i:nth-child(2) {
+    animation-delay: .5s;
+}
+
+.btn i:nth-child(3) {
+    animation-delay: 1s;
+}
+
+
+        /* 크기가 커지고, 투명도 서서히 없어짐 */
+@keyframes btn-ani {
+    from {
+        left: 0;
+        transform: scale(.8);
+        opacity: 0;
+
+    }
+
+    to {
+        left: 130px;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* item */
+aside:hover .item {
+    opacity: 0;
+}
+
+.item img {
+    width: 30%;
+    transform: skew(40deg);
+}
+
+.item {
+    position: absolute;
+    left: -15%;
+    bottom: 10%;
+    animation: pulsate-fwd .9s infinite;
+}
+
+
+@keyframes pulsate-fwd {
+    0% {
+        transform: scale(.8);
+        
+    }
+
+    50% {
+        transform: scale(.7);
+        
+    }
+
+    100% {
+        transform: scale(.8);
+        
+    }
+}
+
+@keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,160 @@
+@import '../reset.css';
+@font-face {
+  font-family: MontserratFont;
+  src: url(./font/MontserratFont.d5de368a.woff2);
+}
+@font-face {
+  font-family: NetflixSans_W_Rg;
+  src: url(./font/NetflixSans_W_Rg.woff2);
+}
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  font-family: NetflixSans_W_Rg;
+}
+body .video {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+body .video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header {
+  position: fixed;
+  width: 160px;
+  height: 100%;
+  background-color: rgb(14, 14, 14);
+  z-index: 99;
+}
+header h1 {
+  text-align: center;
+  padding: 45px 0;
+}
+header h1 img {
+  width: 100px;
+}
+header nav {
+  font-family: MontserratFont;
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+}
+header nav svg {
+  width: 1.25rem;
+  fill: currentcolor;
+}
+header nav li {
+  padding: 15px 5px;
+}
+header nav li a {
+  display: flex;
+  align-items: center;
+}
+header nav li a span {
+  padding-left: 10px;
+}
+header nav li.on {
+  color: #FCBE07;
+}
+header nav li:hover {
+  color: #FCBE07;
+}
+
+section {
+  display: flex;
+  position: relative;
+  top: 0;
+  margin-left: 160px;
+}
+section article {
+  background-color: #000;
+  width: 380px;
+  height: 100vh;
+  text-align: center;
+}
+section article figure > img {
+  height: 570px;
+  border-bottom: 3px solid rgba(220, 166, 4, 0.6);
+}
+section article figure hr {
+  width: 100%;
+  height: 100px;
+  border: 0;
+  margin-top: -25px;
+  box-shadow: 0 100px 120px -100px #daa505 inset;
+}
+section h2 {
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+section h3 {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  font-size: 18px;
+  margin: 8px 0;
+  padding: 10px;
+}
+section h3::before {
+  content: "";
+  flex-grow: 1;
+  margin: 0 16px;
+  background-color: rgba(255, 255, 255, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+}
+section h3::after {
+  content: "";
+  flex-grow: 1;
+  margin: 0 16px;
+  background-color: rgba(255, 255, 255, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+}
+section p {
+  font-size: 15px;
+  padding: 10px;
+  line-height: 2;
+}
+section p.detail {
+  text-align: justify;
+  padding: 10px 40px;
+}
+section .Character-group {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+section .Character-group .Character {
+  width: 45%;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  gap: 1px;
+}
+.btn a {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.btn a:hover, .btn a.on {
+  background-color: rgb(0, 0, 0);
+}
+.btn a.prev {
+  display: none;
+}

@@ -1,0 +1,149 @@
+@import url(../reset.css);
+@font-face {
+  font-family: NotoSansCJKkr-Light;
+  src: url(./font/NotoSansCJKkr-Light.woff);
+}
+@font-face {
+  font-family: "YEONGJUSeonbiTTF";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/YEONGJUSeonbiTTF.woff2");
+}
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  background-color: #000;
+}
+header h1 {
+  height: 180px;
+  padding: 20px;
+}
+header h1 img {
+  height: 100%;
+}
+
+.wrap {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.wrap > div {
+  width: 50%;
+}
+.wrap .v-slide-container {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+}
+.wrap .v-slide-container .vslide-wrap {
+  height: 100%;
+  position: relative;
+  top: -100%;
+}
+.wrap .v-slide-container .vslide-wrap .vslide {
+  position: relative;
+  height: 100%;
+}
+.wrap .v-slide-container .vslide-wrap .vslide .tab-content .tab li {
+  width: 100%;
+  position: absolute;
+  top: 33%;
+  left: 3%;
+  display: none;
+}
+.wrap .v-slide-container .vslide-wrap .vslide .tab-content .tab li:first-child {
+  display: block;
+}
+.wrap .v-slide-container .vslide-wrap .vslide .tab-content .tab li h2 {
+  font-family: "YEONGJUSeonbiTTF";
+  font-size: 35px;
+}
+.wrap .v-slide-container .vslide-wrap .vslide .tab-content .tab li p {
+  font-family: NotoSansCJKkr-Light;
+  font-size: 18px;
+  padding: 10px 0;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+.wrap .v-slide-container .vslide-wrap .vslide .tab-menu {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.wrap .v-slide-container .vslide-wrap .vslide .tab-menu li {
+  height: 250px;
+  position: relative;
+  border: 3px solid #fff;
+}
+.wrap .v-slide-container .vslide-wrap .vslide .tab-menu li a::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+.wrap .v-slide-container .vslide-wrap .vslide .tab-menu li a.on::after {
+  opacity: 0;
+}
+.wrap .v-slide-container .vslide-wrap .vslide .tab-menu li img {
+  height: 100%;
+}
+.wrap .h-slide-container {
+  height: 100vh;
+  overflow: hidden;
+  z-index: 99;
+}
+.wrap .h-slide-container .hslide-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  left: -100%;
+}
+.wrap .h-slide-container .hslide-wrap .hslide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 1;
+  transition: 0.7s;
+}
+.wrap .h-slide-container .hslide-wrap .hslide.hslide1 {
+  background-image: url(./images/rush1.png);
+}
+.wrap .h-slide-container .hslide-wrap .hslide.hslide2 {
+  background-image: url(./images/spray1.png);
+}
+.wrap .h-slide-container .hslide-wrap .hslide.hslide3 {
+  background-image: url(./images/gel1.png);
+}
+.wrap button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 120px;
+}
+.wrap button img {
+  width: 100%;
+}
+.wrap button.prev {
+  position: absolute;
+  left: 5%;
+  bottom: 120px;
+}
+.wrap button.next {
+  position: absolute;
+  right: 55%;
+  bottom: 120px;
+}
