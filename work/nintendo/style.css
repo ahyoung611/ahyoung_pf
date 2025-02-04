@@ -43,22 +43,22 @@ body{
 }
 
 .bg0{
-  background-image: url(./images/동숲\ 배경1.jpg);
+  background-image: url(./images/동숲배경.jpg);
 }
 .bg1{
-    background-image: url(./images/루이지멘션\ 배경.jpg);
+    background-image: url(./images/루이지멘션배경.jpg);
 }
 .bg2{
-   background-image: url(./images/짱구는\ 못말려\ 배경.jpg);
+   background-image: url(./images/짱구는못말려배경.jpg);
 }
 .bg3{
- background-image: url(./images/스플래툰\ 배경1.jpg);
+ background-image: url(./images/스플래툰배경.jpg);
 }
 .bg4{
-   background-image: url(./images/별의커비\ 배경1.jpg);
+   background-image: url(./images/별의커비배경.jpg);
 }
 .bg5{
-    background-image: url(./images/젤다배경1.jpg);
+    background-image: url(./images/젤다배경.jpg);
 }
 
 /* header */
