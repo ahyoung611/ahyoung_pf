@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(../reset.css);
 @font-face {
   font-family: GentleMonsterSerif-Regular;
@@ -69,7 +68,7 @@ section.sect1 .art2 {
   background-image: url(./images/main-bg.png);
 }
 section.sect2 {
-  background-image: url(./images/옵티컬\ 컬렉션.png);
+  background-image: url(./images/opticalBg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -91,7 +90,7 @@ section.sect3 .text-box {
   justify-content: center;
 }
 section.sect4 .art1 {
-  background-image: url(./images/뮈글러/뮈글러.png);
+  background-image: url(./images/mughler/mughlerM.png);
   background-repeat: no-repeat;
 }
 section.sect4 .art2 .summary {
@@ -114,7 +113,7 @@ section.sect4 .art2 .summary .product-summary {
   width: 50%;
 }
 section.sect5 .art1 {
-  background-image: url(./images/젠틀살롱/젠틀\ 살롱\ .png);
+  background-image: url(./images//salon/salonM.png);
   background-repeat: no-repeat;
 }
 section.sect5 .art2 .summary {
@@ -192,7 +191,7 @@ section.sect6 .swiper .swiper-slide img {
   section.sect3 .grid-m .item1 {
     grid-column: 1/span 5;
     grid-row: 1/span 14;
-    background-image: url(./images/메종/메종-마르지엘라.png);
+    background-image: url(./images/maison/maisonBg.png);
   }
   section.sect3 .grid-m .item2 {
     grid-column: 1/span 5;
@@ -202,22 +201,22 @@ section.sect6 .swiper .swiper-slide img {
   section.sect3 .grid-m .item3 {
     grid-column: 1/span 3;
     grid-row: 19/span 4;
-    background-image: url(./images//메종/메종4-1.png);
+    background-image: url(./images/maison/maison4-1.png);
   }
   section.sect3 .grid-m .item4 {
     grid-column: 4/span 2;
     grid-row: 19/span 2;
-    background-image: url(./images//메종/메종2.png);
+    background-image: url(./images/maison/maison2.png);
   }
   section.sect3 .grid-m .item5 {
     grid-column: 4/span 2;
     grid-row: 21/span 2;
-    background-image: url(./images//메종/메종3.png);
+    background-image: url(./images/maison/maison3.png);
   }
   section.sect3 .grid-m .item6 {
     grid-column: 1/span 5;
     grid-row: 23/span 12;
-    background-image: url(./images//메종/메종5.png);
+    background-image: url(./images/maison/maison5.png);
   }
   section.sect3 .grid-m .item7 {
     grid-column: 1/span 5;
@@ -304,7 +303,7 @@ section.sect6 .swiper .swiper-slide img {
   section.sect3 .grid-m .item1 {
     grid-column: 1/span 5;
     grid-row: 1/span 19;
-    background-image: url(./images//메종/메종-마르지엘라.png);
+    background-image: url(./images/maison/maisonBg.png);
   }
   section.sect3 .grid-m .item2 {
     grid-column: 6/span 2;
@@ -314,22 +313,22 @@ section.sect6 .swiper .swiper-slide img {
   section.sect3 .grid-m .item3 {
     grid-column: 6/span 2;
     grid-row: 12/span 7;
-    background-image: url(./images//메종/메종4-0.png);
+    background-image: url(./images/maison/maison4.png);
   }
   section.sect3 .grid-m .item4 {
     grid-column: 8/span 2;
     grid-row: 1/span 3;
-    background-image: url(./images//메종/메종2.png);
+    background-image: url(./images/maison/maison2.png);
   }
   section.sect3 .grid-m .item5 {
     grid-column: 10/span 2;
     grid-row: 1/span 3;
-    background-image: url(./images//메종/메종3.png);
+    background-image: url(./images/maison/maison3.png);
   }
   section.sect3 .grid-m .item6 {
     grid-column: 8/span 4;
     grid-row: 4/span 12;
-    background-image: url(./images//메종/메종5.png);
+    background-image: url(./images/maison/maison5.png);
   }
   section.sect3 .grid-m .item7 {
     grid-column: 8/span 4;
