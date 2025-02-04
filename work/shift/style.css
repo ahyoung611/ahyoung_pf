@@ -22,9 +22,7 @@ body {
     overflow-x: hidden;
     height: 100%;
     max-width: 1920px;
-    /* background만 쓸경우 기본값이 들어간다. */
-    background: url(./images/욕실배경bg.png) no-repeat;
-    /* background에 기본값이 들어가기 때문에 position을 아래에 넣어야 한다. */
+    background: url(./images/shift-bg.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
